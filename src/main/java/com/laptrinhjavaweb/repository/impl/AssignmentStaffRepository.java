@@ -17,8 +17,9 @@ public class AssignmentStaffRepository extends SimpleJpaRepository<AssignmentSta
     }
 
     @Override
-    public List<AssignmentStaffEntity> findByStaffIdAndBuildingId(Map<String,Object> properties) {
-        return this.finAll(properties);
+    public AssignmentStaffEntity findByStaffIdAndBuildingId(Map<String,Object> properties) {
+        List<AssignmentStaffEntity> assignmentStaff = this.finAll(properties);
+        return assignmentStaff.size()>0 ? assignmentStaff.get(0) : new AssignmentStaffEntity();
     }
     private String buildSqlFindSpecial(){
         StringBuilder sql = new StringBuilder("");

@@ -73,10 +73,10 @@ public class AssignmentStaffService implements IAssignmentStaffService {
                     .setStaffId(user.getId())
                     .setBuildingId(buildingId)
                     .build();
-            List<AssignmentStaffEntity>  assignmentStaffs =
+            AssignmentStaffEntity  assignmentStaffs =
                     assignmentStaffRepository.findByStaffIdAndBuildingId(convertToMapProperties(builder));
             if (user.getChecked().equals("checked")){
-             if ( assignmentStaffs.get(0)==null){
+             if ( assignmentStaffs==null){
                  AssignmentStaffEntity entity = new AssignmentStaffEntity();
                  entity.setBuildingId(buildingId);
                  entity.setStaffId(user.getId());
@@ -84,8 +84,8 @@ public class AssignmentStaffService implements IAssignmentStaffService {
              }
             }
             else {
-                if (assignmentStaffs.size()>0 && assignmentStaffs.get(0)!=null ){
-                    deleteOne(assignmentStaffs.get(0).getId());
+                if (assignmentStaffs!=null ){
+                    deleteOne(assignmentStaffs.getId());
                 }
             }
         }

@@ -8,5 +8,5 @@ import java.util.Map;
 public interface IAssignmentStaffRepository extends JpaRepository<AssignmentStaffEntity> {
   //  void deleteById(Map<String,Object> properties, Long id);
     void deleteById(Long id);
-    List<AssignmentStaffEntity> findByStaffIdAndBuildingId(Map<String,Object> properties);
+    AssignmentStaffEntity findByStaffIdAndBuildingId(Map<String,Object> properties);
 }

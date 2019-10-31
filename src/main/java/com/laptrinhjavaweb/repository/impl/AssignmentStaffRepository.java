@@ -11,15 +11,12 @@ public class AssignmentStaffRepository extends SimpleJpaRepository<AssignmentSta
         implements IAssignmentStaffRepository {
 
 
-    @Override
-    public void deleteById(Long id) {
-        deleteById(id,new String());
-    }
+
 
     @Override
     public AssignmentStaffEntity findByStaffIdAndBuildingId(Map<String,Object> properties) {
         List<AssignmentStaffEntity> assignmentStaff = this.finAll(properties);
-        return assignmentStaff.size()>0 ? assignmentStaff.get(0) : new AssignmentStaffEntity();
+        return assignmentStaff.size()>0 ? assignmentStaff.get(0) : null;
     }
     private String buildSqlFindSpecial(){
         StringBuilder sql = new StringBuilder("");

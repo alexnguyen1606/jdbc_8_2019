@@ -62,7 +62,9 @@ public class AssignmentStaffService implements IAssignmentStaffService {
 
     @Override
     public List<AssignmentStaffDTO> deleteOne(Long id) {
-        assignmentStaffRepository.deleteById(id);
+        if (id!=null){
+            assignmentStaffRepository.deleteById(id);
+        }
         return assignmentStaffRepository.findAll()
                 .stream().map(item->converter.convertToDTO(item)).collect(Collectors.toList());
     }
@@ -83,7 +85,7 @@ public class AssignmentStaffService implements IAssignmentStaffService {
                  assignmentStaffRepository.insert(entity);
              }
             }
-            else {
+            else if (user.getChecked().equals("")){
                 if (assignmentStaffs!=null ){
                     deleteOne(assignmentStaffs.getId());
                 }
@@ -98,7 +100,7 @@ public class AssignmentStaffService implements IAssignmentStaffService {
         for(Field field : fields){
             if (field.getName().equals("buildingId")||field.getName().equals("staffId")){
                 field.setAccessible(true);
-                    properties.put(field.getName().toLowerCase(),field.get(assigmentStaffBuilder));
+                properties.put(field.getName().toLowerCase(),field.get(assigmentStaffBuilder));
                 }
             }
         } catch (IllegalAccessException e) {

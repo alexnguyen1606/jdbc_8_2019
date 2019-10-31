@@ -145,11 +145,17 @@ public class BuildingService implements IBuildingService{
 	private void saveRentArea(Long buildingId,String areaRent){
 		String[] listAreaRent = areaRent.trim().split(",");
 		for (String value : listAreaRent){
-			int a = Integer.parseInt(value);
-			RentAreaDTO rentAreaDTO = new RentAreaDTO();
-			rentAreaDTO.setValue(a);
-			rentAreaDTO.setBuildingId(buildingId);
-			rentAreaService.save(rentAreaDTO);
+			Integer a = null;
+			try{
+				a = Integer.parseInt(value);
+				RentAreaDTO rentAreaDTO = new RentAreaDTO();
+				rentAreaDTO.setValue(a);
+				rentAreaDTO.setBuildingId(buildingId);
+				rentAreaService.save(rentAreaDTO);
+			}catch (Exception e){
+				System.out.println(e.toString());
+			}
+
 		}
 	}
 }

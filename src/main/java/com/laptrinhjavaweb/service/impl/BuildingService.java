@@ -58,7 +58,7 @@ public class BuildingService implements IBuildingService{
             entity.setModifiedDate(new Date());
             entity.setCreatedBy("abc");
             Long id = buildingRepository.save(entity);
-			saveRentArea(id,buildingDTO.getAreaRent());
+			rentAreaService.saveAll(id,buildingDTO.getAreaRent());
             return findOne(id);
         }
 		else {
@@ -142,20 +142,5 @@ public class BuildingService implements IBuildingService{
         }
 	    return result.toString();
     }
-	private void saveRentArea(Long buildingId,String areaRent){
-		String[] listAreaRent = areaRent.trim().split(",");
-		for (String value : listAreaRent){
-			Integer a = null;
-			try{
-				a = Integer.parseInt(value);
-				RentAreaDTO rentAreaDTO = new RentAreaDTO();
-				rentAreaDTO.setValue(a);
-				rentAreaDTO.setBuildingId(buildingId);
-				rentAreaService.save(rentAreaDTO);
-			}catch (Exception e){
-				System.out.println(e.toString());
-			}
 
-		}
-	}
 }

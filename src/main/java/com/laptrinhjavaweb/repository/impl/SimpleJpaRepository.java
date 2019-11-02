@@ -308,7 +308,10 @@ public class SimpleJpaRepository<T> implements JpaRepository<T>{
 			Table table = zClass.getAnnotation(Table.class);
 			tableName = table.name();
 		}
-		StringBuilder sql =new StringBuilder("DELETE FROM "+tableName+" WHERE id = ?");
+		StringBuilder sql =new StringBuilder("DELETE FROM "+tableName+" WHERE 1=1 ");
+		if (id!=null){
+			sql.append(" AND id="+id);
+		}
 		if (where!=null && where.length>0){
 			sql.append(" "+where[0]);
 		}
@@ -335,6 +338,41 @@ public class SimpleJpaRepository<T> implements JpaRepository<T>{
 				} catch (SQLException e) {
 					e.printStackTrace();
 				}
+		}
+	}
+
+	@Override
+	public void deleteSpecial(Map<String, Object> properties, Object... objects) {
+		String tableName = "";
+		if (zClass.isAnnotationPresent(Table.class) && zClass.isAnnotationPresent(Entity.class)){
+			Table table = zClass.getAnnotation(Table.class);
+			tableName = table.name();
+		}
+		StringBuilder sql =new StringBuilder("DELETE FROM "+tableName+" WHERE 1=1 ");
+		sql = createDeleteSpecial(sql,properties);
+
+		Connection connection=null;
+		PreparedStatement statement = null;
+
+		try {
+			connection = EntityManagerFactory.getConnection();
+			connection.setAutoCommit(false);
+			statement = connection.prepareStatement(sql.toString());
+			statement.executeUpdate();
+			connection.commit();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				if (statement!=null) {
+					statement.close();
+				}
+				if (connection!=null)
+					connection.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 
@@ -564,15 +602,38 @@ public class SimpleJpaRepository<T> implements JpaRepository<T>{
             }
             for (int i1=0 ;i1 <keys.length;i1++ ){
                 if (values[i1] instanceof String && StringUtils.isNotBlank(values[i1].toString())){
-                    where.append(" AND LOWER( A."+keys[i1]+") LIKE '%"+values[i1].toString()+"%' ");
+                    where.append(" AND  A."+keys[i1]+" LIKE '%"+values[i1].toString()+"%' ");
                 }else if(values[i1] instanceof Integer && values[i1]!=null){
-                    where.append(" AND LOWER( A."+keys[i1]+") = "+values[i1]+" ");
+                    where.append(" AND  A."+keys[i1]+" = "+values[i1]+" ");
 
                 } else if (values[i1] instanceof Long && values[i1]!=null){
-                    where.append(" AND LOWER( A."+keys[i1]+") = "+values[i1]+" ");
+                    where.append(" AND  A."+keys[i1]+" = "+values[i1]+" ");
                 }
             }
         }
         return where;
     }
+    protected StringBuilder createDeleteSpecial(StringBuilder where,Map<String,Object> properties){
+		if(properties!=null && properties.size()>0){
+			String[] keys = new String[properties.size()];
+			Object[] values = new Object[properties.size()];
+			int i=0;
+			for(Map.Entry<String,Object> entry : properties.entrySet()){
+				keys[i]=entry.getKey();
+				values[i] = entry.getValue();
+				i++;
+			}
+			for (int i1=0 ;i1 <keys.length;i1++ ){
+				if (values[i1] instanceof String && StringUtils.isNotBlank(values[i1].toString())){
+					where.append(" AND  "+keys[i1]+" LIKE '%"+values[i1].toString()+"%' ");
+				}else if(values[i1] instanceof Integer && values[i1]!=null){
+					where.append(" AND  "+keys[i1]+" = "+values[i1]+" ");
+
+				} else if (values[i1] instanceof Long && values[i1]!=null){
+					where.append(" AND  "+keys[i1]+" = "+values[i1]+" ");
+				}
+			}
+		}
+		return where;
+	}
 }

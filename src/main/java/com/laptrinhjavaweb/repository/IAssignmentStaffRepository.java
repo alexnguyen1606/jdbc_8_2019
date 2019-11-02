@@ -9,4 +9,6 @@ public interface IAssignmentStaffRepository extends JpaRepository<AssignmentStaf
 
    // void deleteById(Long id);
     AssignmentStaffEntity findByStaffIdAndBuildingId(Map<String,Object> properties);
+    List<AssignmentStaffEntity> findByBuildingId(Map<String,Object> properties);
+    void deleteByBuildingIdAndStaffId(Map<String,Object> properties);
 }

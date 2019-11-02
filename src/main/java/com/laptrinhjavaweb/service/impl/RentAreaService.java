@@ -38,4 +38,20 @@ public class RentAreaService implements IRentAreaService {
             return converter.convertToDTO(rentAreaRepository.findById(id));
         }
     }
+    public void saveAll(Long buildingId,String areaRent){
+        String[] listAreaRent = areaRent.trim().split(",");
+        for (String value : listAreaRent){
+            Integer a = null;
+            try{
+                a = Integer.parseInt(value);
+                RentAreaDTO rentAreaDTO = new RentAreaDTO();
+                rentAreaDTO.setValue(a);
+                rentAreaDTO.setBuildingId(buildingId);
+                save(rentAreaDTO);
+            }catch (Exception e){
+                System.out.println(e.toString());
+            }
+
+        }
+    }
 }

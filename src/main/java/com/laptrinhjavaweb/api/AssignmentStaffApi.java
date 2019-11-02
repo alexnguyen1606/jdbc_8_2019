@@ -27,8 +27,9 @@ public class AssignmentStaffApi extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("application/json");
         AssignmentStaffDTO assignmentStaffDTO =  HttpUtil.of(request.getReader()).toModel(AssignmentStaffDTO.class);
-        BuildingDTO buildingDTO = FormUtil.toModel(BuildingDTO.class,request);
+
         IAssignmentStaffService assignmentStaffService = new AssignmentStaffService();
-        ((AssignmentStaffService) assignmentStaffService).saveAssignment(buildingDTO.getId(),assignmentStaffDTO);
+        ((AssignmentStaffService) assignmentStaffService).
+                assignBuilding(assignmentStaffDTO.getBuildingId(),assignmentStaffDTO.getStaffs());
     }
 }

@@ -49,24 +49,26 @@ public class UserService implements IUserService{
 
 	@Override
 	public List<UserDTO> findByStatusAndRoleIdAndBuildingId(int status,long roleId,Long buildingId) {
-		List<UserDTO> a = userRepository.findAllByStatusAndRole(status,roleId).stream().map(item -> converter.convertToDTO(item))
+		List<UserDTO> a = userRepository.findAllByStatusAndRole(status,roleId)
+				.stream().map(item -> converter.convertToDTO(item))
 				.collect(Collectors.toList());
 		Map<Long, Object> listA = a.stream().collect(
 			Collectors.toMap(UserDTO::getId,item-> item )
 		);
 
-		List<UserDTO> b = userRepository.findAllByAssigmentStaff(buildingId).stream().map(item -> converter.convertToDTO(item))
+		List<UserDTO> listB = userRepository.findAllByAssigmentStaff(buildingId)
+				.stream().map(item -> converter.convertToDTO(item))
 				.collect(Collectors.toList());
 
 		List<UserDTO> result = new ArrayList<>();
 		for (Map.Entry item : listA.entrySet()){
-			UserDTO userDTO1 = (UserDTO) item.getValue();
-			for (UserDTO userDTO : b) {
+			UserDTO userListA = (UserDTO) item.getValue();
+			for (UserDTO userDTO : listB) {
 				if (item.getKey()==userDTO.getId()) {
-					userDTO1.setChecked("checked");
+					userListA.setChecked("checked");
 				}
 			}
-			result.add(userDTO1);
+			result.add(userListA);
 		}
 		return result;
 	}

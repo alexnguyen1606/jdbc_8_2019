@@ -16,6 +16,7 @@ public interface JpaRepository<T> {
 	List<T> findAll();
 	T findById(Long id);
 	void deleteById(Long id,Object... objects);
+	void deleteSpecial(Map<String,Object> properties,Object... objects);
 	Long insert(Object t);
 	void update(Object t);
 }

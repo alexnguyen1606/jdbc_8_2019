@@ -18,17 +18,16 @@ public class AssignmentStaffRepository extends SimpleJpaRepository<AssignmentSta
         List<AssignmentStaffEntity> assignmentStaff = this.finAll(properties);
         return assignmentStaff.size()>0 ? assignmentStaff.get(0) : null;
     }
-    private String buildSqlFindSpecial(){
-        StringBuilder sql = new StringBuilder("");
-        return sql.toString();
+
+    @Override
+    public List<AssignmentStaffEntity> findByBuildingId(Map<String, Object> properties) {
+        return this.finAll(properties);
     }
-//    private String buildDeleteSpecial(Map<String, Object> properties){
-//        StringBuilder sql = new StringBuilder("");
-//        for (Map.Entry item : properties.entrySet()){
-//            sql.append(" AND");
-//            sql.append(" "+item.getKey()+" =");
-//            sql.append(item.getValue());
-//        }
-//        return sql.toString();
-//    }
+
+    @Override
+    public void deleteByBuildingIdAndStaffId(Map<String, Object> properties) {
+        this.deleteSpecial(properties);
+    }
+
+
 }

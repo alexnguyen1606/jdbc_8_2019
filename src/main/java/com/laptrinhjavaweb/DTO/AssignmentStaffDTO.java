@@ -7,14 +7,15 @@ public class AssignmentStaffDTO {
     private Long id;
     private Long buildingId;
     private Long staffId;
-    List<UserDTO> users = new ArrayList<>();
+    private Long[] staffs = new Long[]{};
 
-    public List<UserDTO> getUsers() {
-        return users;
+
+    public Long[] getStaffs() {
+        return staffs;
     }
 
-    public void setUsers(List<UserDTO> users) {
-        this.users = users;
+    public void setStaffs(Long[] staffs) {
+        this.staffs = staffs;
     }
 
     public Long getId() {

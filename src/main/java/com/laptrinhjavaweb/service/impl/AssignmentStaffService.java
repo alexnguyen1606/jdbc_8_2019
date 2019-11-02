@@ -102,6 +102,7 @@ public class AssignmentStaffService implements IAssignmentStaffService {
                 deleteByBuildingIdAndStaffId(buildingId,item);
             }
         }
+        
         for (Long item : staffsAssign){
             if (!staffsAssignInDB.contains(item) && item!=null){
               AssignmentStaffDTO dto = new AssignmentStaffDTO();
@@ -110,20 +111,6 @@ public class AssignmentStaffService implements IAssignmentStaffService {
               this.save(dto);
             }
         }
-//        for (Long userId : staffs){
-//            AssigmentStaffBuilder builder = new AssigmentStaffBuilder.Builder()
-//                    .setStaffId(userId)
-//                    .setBuildingId(buildingId)
-//                    .build();
-//            AssignmentStaffEntity  assignmentStaffs =
-//                    assignmentStaffRepository.findByStaffIdAndBuildingId(convertToMapProperties(builder));
-//             if ( assignmentStaffs==null){
-//                 AssignmentStaffEntity entity = new AssignmentStaffEntity();
-//                 entity.setBuildingId(buildingId);
-//                 entity.setStaffId(userId);
-//                 assignmentStaffRepository.insert(entity);
-//             }
-//        }
     }
     private Map<String,Object> convertToMapProperties(AssigmentStaffBuilder assigmentStaffBuilder){
         Map<String,Object> properties = new HashMap<>();

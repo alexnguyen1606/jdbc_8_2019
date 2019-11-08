@@ -28,9 +28,7 @@ public class BuildingDTO extends BaseDTO{
 
 	private Integer costRent;
 
-	private String costRentFrom;
 
-	private String costRentTo;
 
 	private String costDescription;
 
@@ -61,6 +59,8 @@ public class BuildingDTO extends BaseDTO{
 	private String areaRent;
 	private String rentAreaFrom;
 	private String rentAreaTo;
+	private String costRentFrom;
+	private String costRentTo;
     private String staffId;
 
 

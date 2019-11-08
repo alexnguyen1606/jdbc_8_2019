@@ -49,19 +49,19 @@ public class AssignmentStaffService implements IAssignmentStaffService {
     }
 
     @Override
-    public List<AssignmentStaffDTO> delete(Long[] ids) {
-        for (Long id : ids){
+    public void delete(Long[] ids) {
+     if (ids.length>0){
+        for (Long id : ids) {
             assignmentStaffRepository.deleteById(id);
         }
-        return findAll();
+    }
     }
 
     @Override
-    public List<AssignmentStaffDTO> deleteOne(Long id) {
+    public void deleteOne(Long id) {
         if (id!=null){
             assignmentStaffRepository.deleteById(id);
         }
-        return findAll();
     }
 
     @Override
@@ -75,14 +75,22 @@ public class AssignmentStaffService implements IAssignmentStaffService {
     }
 
     @Override
-    public List<AssignmentStaffDTO> deleteByBuildingIdAndStaffId(Long buildingId, Long staffId) {
+    public void deleteByBuildingIdAndStaffId(Long buildingId, Long staffId) {
         AssigmentStaffBuilder builder = new AssigmentStaffBuilder.Builder()
                 .setBuildingId(buildingId)
                 .setStaffId(staffId)
                 .build();
         Map<String,Object> properties = convertToMapProperties(builder);
         assignmentStaffRepository.deleteByBuildingIdAndStaffId(properties);
-        return findAll();
+    }
+
+    @Override
+    public void deleteByBuildingId(Long buildingId) {
+        AssigmentStaffBuilder builder = new AssigmentStaffBuilder.Builder()
+                .setBuildingId(buildingId)
+                .build();
+        Map<String,Object> properties = convertToMapProperties(builder);
+        assignmentStaffRepository.deleteByBuildingId(properties);
     }
 
     @Override

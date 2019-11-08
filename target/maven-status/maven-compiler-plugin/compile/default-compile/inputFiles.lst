@@ -1,31 +1,61 @@
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\repository\JpaRepository.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\paging\PageRequest.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\service\IBuildingService.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\annotation\Entity.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\service\impl\BuildingServiceImpl.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\entity\BuildingEntity.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\controller\BuildingController.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\DTO\BaseDTO.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\service\IUserService.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\entity\BaseEntity.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\builder\Computer.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\controller\UserController.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\builder\BuildingSearchBuilder.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\repository\impl\BuildingRepository.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\DTO\BuildingDTO.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\repository\impl\UserRepositoryImpl.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\service\impl\UserServiceImpl.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\entity\UserEntity.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\api\BuildingApi.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\controller\HomeController.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\annotation\Column.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\repository\IBuildingRepository.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\repository\impl\EntityManagerFactory.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\utils\HttpUtil.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\paging\Pageable.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\converter\BuildingConverter.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\repository\IUserRepository.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\repository\impl\SimpleJpaRepository.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\DTO\UserDTO.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\annotation\Table.java
-D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\mapper\ResultSetMapper.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\controller\UserController.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\IBuildingRepository.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\DTO\BaseDTO.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\impl\BuildingService.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\impl\CustomerService.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\ICustomerRepository.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\impl\UserService.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\DTO\AssignmentStaffDTO.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\converter\RentAreaConverter.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\IUserRepository.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\api\CustomerApi.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\converter\CustomerConverter.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\builder\CustomerSearchBuilder.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\DTO\RentAreaDTO.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\DTO\CustomerServiceDTO.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\converter\AssignmentStaffConverter.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\controller\BuildingController.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\entity\CustomerEntity.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\IRentAreaRepository.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\JpaRepository.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\annotation\Entity.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\impl\UserRepository.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\api\AssignmentStaffApi.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\impl\BuildingRepository.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\mapper\ResultSetMapper.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\IBuildingService.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\controller\HomeController.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\impl\AssignmentStaffRepository.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\builder\RentAreaBuilder.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\entity\BaseEntity.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\builder\BuildingSearchBuilder.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\entity\UserEntity.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\paging\PageRequest.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\utils\FormUtil.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\entity\AssignmentStaffEntity.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\impl\CustomerRepository.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\impl\EntityManagerFactory.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\IAssignmentStaffService.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\IRentAreaService.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\DTO\UserDTO.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\api\BuildingApi.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\impl\AssignmentStaffService.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\IAssignmentStaffRepository.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\impl\RentAreaService.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\paging\Pageable.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\entity\CustomerServiceEntity.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\impl\SimpleJpaRepository.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\converter\BuildingConverter.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\utils\HttpUtil.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\api\UserApi.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\converter\UserConverter.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\entity\RentAreaEntity.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\annotation\Column.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\entity\BuildingEntity.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\DTO\BuildingDTO.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\impl\RentAreaRepository.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\annotation\Table.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\builder\AssigmentStaffBuilder.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\DTO\CustomerDTO.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\ICustomerService.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\IUserService.java

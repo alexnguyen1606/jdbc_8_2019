@@ -29,5 +29,10 @@ public class AssignmentStaffRepository extends SimpleJpaRepository<AssignmentSta
         this.deleteSpecial(properties);
     }
 
+    @Override
+    public void deleteByBuildingId(Map<String, Object> properties) {
+        this.deleteSpecial(properties);
+    }
+
 
 }

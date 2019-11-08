@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(urlPatterns = {"/api/building"})
+@WebServlet(urlPatterns = {"/api-building"})
 public class BuildingApi extends HttpServlet {
 
     protected void doPost (HttpServletRequest request, HttpServletResponse response)throws SecurityException,IOException{
@@ -66,7 +66,8 @@ public class BuildingApi extends HttpServlet {
       response.setContentType("application/json");
         BuildingDTO buildingDTO = HttpUtil.of(request.getReader()).toModel(BuildingDTO.class);
         IBuildingService buildingService = new BuildingService();
-        objectMapper.writeValue(response.getOutputStream(),buildingService.delete(buildingDTO.getIdDelete()));
+        buildingService.delete(buildingDTO.getIdDelete());
+       // objectMapper.writeValue(response.getOutputStream(),buildingService.findAll()));
     }
 
 

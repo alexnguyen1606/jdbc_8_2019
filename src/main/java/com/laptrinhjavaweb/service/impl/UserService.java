@@ -67,6 +67,9 @@ public class UserService implements IUserService{
 				if (item.getKey()==userDTO.getId()) {
 					userListA.setChecked("checked");
 				}
+				else{
+					userListA.setChecked("");
+				}
 			}
 			result.add(userListA);
 		}

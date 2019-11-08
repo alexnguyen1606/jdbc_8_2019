@@ -322,7 +322,7 @@ public class SimpleJpaRepository<T> implements JpaRepository<T>{
 			connection = EntityManagerFactory.getConnection();
 			connection.setAutoCommit(false);
 			statement = connection.prepareStatement(sql.toString());
-			statement.setObject(1,id);
+			//statement.setObject(1,id);
 			statement.executeUpdate();
 			connection.commit();
 		} catch (SQLException e) {

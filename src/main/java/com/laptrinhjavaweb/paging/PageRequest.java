@@ -15,7 +15,10 @@ public class PageRequest implements Pageable {
 
     @Override
     public Integer getOffSet() {
-        return (this.page-1)*this.limit;
+        if (this.page !=null && this.limit!=null) {
+            return (this.page - 1) * this.limit;
+        }
+        return null;
     }
 
     @Override

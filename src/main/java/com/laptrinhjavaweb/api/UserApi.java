@@ -15,7 +15,7 @@ import java.io.IOException;
 
 import com.laptrinhjavaweb.utils.FormUtil;
 import com.laptrinhjavaweb.utils.HttpUtil;
-@WebServlet(urlPatterns = {"/api/user"})
+@WebServlet(urlPatterns = {"/api-user"})
 public class UserApi extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

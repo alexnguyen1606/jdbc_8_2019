@@ -21,10 +21,12 @@ public class BuildingService implements IBuildingService{
 	private BuildingRepository buildingRepository;
 	private BuildingConverter buildingConverter;
 	private RentAreaService rentAreaService;
+	private AssignmentStaffService assignmentStaffService;
 	public BuildingService() {
 	buildingRepository = new BuildingRepository();
 	buildingConverter = new BuildingConverter();
 	rentAreaService = new RentAreaService();
+	assignmentStaffService = new AssignmentStaffService();
 	}
 	public List<BuildingDTO> findAll(BuildingSearchBuilder fieldSearch, Pageable pageable){
 
@@ -99,11 +101,14 @@ public class BuildingService implements IBuildingService{
 	}
 
 	@Override
-	public List<BuildingDTO> delete(Long[] ids) {
-		for (Long id : ids){
-			buildingRepository.deleteById(id);
+	public void  delete(Long[] ids) {
+		if (ids.length>0) {
+			for (Long id : ids) {
+				assignmentStaffService.deleteByBuildingId(id);
+				rentAreaService.deleteByBuildingId(id);
+				buildingRepository.deleteById(id);
+			}
 		}
-		return findAll();
 	}
 
 	private Map<String,Object> convertToMapProperties(BuildingSearchBuilder fieldSearch) {

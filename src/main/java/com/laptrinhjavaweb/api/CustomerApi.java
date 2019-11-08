@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/api/customer")
+@WebServlet("/api-customer")
 public class CustomerApi extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
@@ -24,7 +24,7 @@ public class CustomerApi extends HttpServlet {
         response.setContentType("application/json");
         CustomerDTO customerDTO = FormUtil.toModel(CustomerDTO.class,request);
         ICustomerService customerService = new CustomerService();
-        Pageable pageable = new PageRequest(customerDTO.getPage(),customerDTO.getLimit());
+        Pageable pageable = new PageRequest(1,10);
         CustomerSearchBuilder customerSearchBuilder = new CustomerSearchBuilder.Builder()
                 .setEmail(customerDTO.getEmail())
                 .setFullName(customerDTO.getFullName())

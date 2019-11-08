@@ -1,0 +1,46 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.ui.intro,3.4.0.v20100427,"org.eclipse.ui.intro",1572917521884
+started,bundle,org.eclipse.ui.intro.universal,3.2.402.r36_v20100702,"org.eclipse.ui.intro.universal",1572917521884
+started,bundle,org.eclipse.ui.navigator,3.5.0.I20100601-0800,"org.eclipse.ui.navigator",1572917521884
+started,bundle,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.resources",1572917521900
+started,bundle,org.eclipse.ui.net,1.2.100.I20100505-1245,"org.eclipse.ui.net",1572917521900
+started,bundle,org.eclipse.ui.views,3.5.1.M20110202-0800,"org.eclipse.ui.views",1572917521900
+started,bundle,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"org.eclipse.ui.workbench",1572917521900
+started,bundle,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.workbench.texteditor",1572917521900
+started,bundle,org.eclipse.update.configurator,3.3.100.v20100512,"org.eclipse.update.configurator",1572917521900
+started,bundle,org.eclipse.update.core,3.2.402.R36x_v20100629,"org.eclipse.update.core",1572917521900
+started,bundle,org.eclipse.update.scheduler,3.2.300.v20100512,"org.eclipse.update.scheduler",1572917521900
+started,bundle,org.eclipse.wst.common.emf,1.2.3.v201012100400,"org.eclipse.wst.common.emf",1572917521900
+started,bundle,org.eclipse.wst.common.emfworkbench.integration,1.2.3.v201012020600,"org.eclipse.wst.common.emfworkbench.integration",1572917521900
+started,bundle,org.eclipse.wst.common.frameworks,1.2.0.v201003040800,"org.eclipse.wst.common.frameworks",1572917521900
+started,bundle,org.eclipse.wst.common.project.facet.core,1.4.102.v201008170019,"org.eclipse.wst.common.project.facet.core",1572917521900
+started,bundle,org.eclipse.wst.web,1.1.402.v201012160000,"org.eclipse.wst.web",1572917521900
+os,sysinfo,,,"win32",1572917521900
+arch,sysinfo,,,"x86_64",1572917521900
+ws,sysinfo,,,"win32",1572917521900
+locale,sysinfo,,,"en_US",1572917521900
+processors,sysinfo,,,"4",1572917521900
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1572917521900
+java.runtime.version,sysinfo,,,"1.8.0_152-b16",1572917521900
+java.specification.name,sysinfo,,,"Java Platform API Specification",1572917521900
+java.specification.vendor,sysinfo,,,"Oracle Corporation",1572917521900
+java.specification.version,sysinfo,,,"1.8",1572917521900
+java.vendor,sysinfo,,,"Oracle Corporation",1572917521900
+java.version,sysinfo,,,"1.8.0_152",1572917521900
+java.vm.info,sysinfo,,,"mixed mode",1572917521900
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1572917521900
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1572917521900
+java.vm.specification.vendor,sysinfo,,,"Oracle Corporation",1572917521900
+java.vm.specification.version,sysinfo,,,"1.8",1572917521900
+java.vm.vendor,sysinfo,,,"Oracle Corporation",1572917521900
+java.vm.version,sysinfo,,,"25.152-b16",1572917521900
+activated,view,org.eclipse.ui.navigator.resources,3.4.202.M20101124-0800,"org.eclipse.ui.navigator.ProjectExplorer",1572917545164
+closed,view,org.eclipse.ui,3.6.2.M20110203-1100,"org.eclipse.ui.internal.introview",1572917545211
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1572917547433
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1572917549705
+executed,command,org.eclipse.ui.ide,3.6.2.M20101201-0800,"org.eclipse.ui.edit.text.openLocalFile",1572917549759
+deactivated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1572917559422
+activated,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1572917565997
+closed,workbench,org.eclipse.ui.workbench,3.6.2.M20110210-1200,"",1572917566197
+started,bundle,org.eclipse.compare.core,3.5.101.R36x_v20100929-0800,"org.eclipse.compare.core",1572917566445
+started,bundle,org.eclipse.compare,3.5.101.R36x_v20100929-0800,"org.eclipse.compare",1572917566445

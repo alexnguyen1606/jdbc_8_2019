@@ -2,38 +2,154 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="jsp-servlet-jdbc:war" />
+      <artifact name="jsp-servlet-jdbc:war exploded" />
     </artifacts-to-build>
   </component>
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java" description="BuildingDTO buildingDTO = HttpUtil.of(request.getR..." line="26" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c93a25cb-c560-4239-be7c-873db09fcb53" name="Default" comment="update assign building">
+    <list default="true" id="eed18fae-7145-469f-b92b-4065a2aeab02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/builder/RentAreaBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/admin/ace-setting.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/admin/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/admin/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/taglib.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/js/building-edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/js/building-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/building/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/building/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/jsp_servlet_jdbc_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/jsp_servlet_jdbc_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_api_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_2_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/data_estatejdbc8_2019.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/data_estatejdbc8_2019.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsp-servlet-jdbc.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BuildingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BuildingDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/AssignmentStaffApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/AssignmentStaffApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/CustomerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/CustomerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/UserApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/BuildingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/BuildingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/paging/PageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/paging/PageRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IRentAreaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IRentAreaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/RentAreaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/RentAreaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IAssignmentStaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IAssignmentStaffService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IBuildingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IBuildingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IRentAreaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IRentAreaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/AssignmentStaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/AssignmentStaffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/DTO/AssignmentStaffDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/DTO/AssignmentStaffDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/BuildingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/BuildingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/RentAreaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/RentAreaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jsp-servlet-jdbc.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/DTO/BuildingDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/DTO/BuildingDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/annotation/Column.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/annotation/Column.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/annotation/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/annotation/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/annotation/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/annotation/Table.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/AssignmentStaffApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/AssignmentStaffApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/BuildingApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/BuildingApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/CustomerApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/CustomerApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/UserApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/UserApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/controller/BuildingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/controller/BuildingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/mapper/ResultSetMapper$ColumnModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/mapper/ResultSetMapper$ColumnModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/mapper/ResultSetMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/mapper/ResultSetMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/paging/PageRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/paging/PageRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/paging/Pageable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/paging/Pageable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/JpaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/JpaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/IRentAreaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/IRentAreaRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/RentAreaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/RentAreaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/IAssignmentStaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/IAssignmentStaffService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/IBuildingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/IBuildingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/IRentAreaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/IRentAreaService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/AssignmentStaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/AssignmentStaffService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/BuildingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/BuildingService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/RentAreaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/RentAreaService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/utils/HttpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/utils/HttpUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/DTO/AssignmentStaffDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/DTO/AssignmentStaffDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/META-INF/jsp-servlet-jdbc.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/DTO/BuildingDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/DTO/BuildingDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Column.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Column.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Table.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/AssignmentStaffApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/AssignmentStaffApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/BuildingApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/BuildingApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/CustomerApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/CustomerApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/UserApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/UserApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/controller/BuildingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/controller/BuildingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/mapper/ResultSetMapper$ColumnModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/mapper/ResultSetMapper$ColumnModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/mapper/ResultSetMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/mapper/ResultSetMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/paging/PageRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/paging/PageRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/paging/Pageable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/paging/Pageable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/JpaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/JpaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/IRentAreaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/IRentAreaRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/RentAreaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/RentAreaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IAssignmentStaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IAssignmentStaffService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IBuildingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IBuildingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IRentAreaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IRentAreaService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/AssignmentStaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/AssignmentStaffService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/BuildingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/BuildingService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/RentAreaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/RentAreaService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/utils/HttpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/utils/HttpUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/views/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/views/admin/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/laptrinhjavaweb/jsp-servlet-jdbc/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/laptrinhjavaweb/jsp-servlet-jdbc/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,69 +158,40 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/AssignmentStaffService.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="68" column="58" lean-forward="true" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IBuildingService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/AssignmentStaffDTO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/BuildingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="141">
+              <caret line="108" column="44" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/builder/AssigmentStaffBuilder.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/RentAreaService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IAssignmentStaffService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="141">
+              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -112,68 +199,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1734">
-              <caret line="350" column="71" lean-forward="true" selection-start-line="350" selection-start-column="71" selection-end-line="350" selection-end-column="71" />
+            <state relative-caret-position="389">
+              <caret line="327" column="34" lean-forward="true" selection-start-line="327" selection-start-column="34" selection-end-line="327" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/JpaRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/AssignmentStaffService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="126" column="34" lean-forward="true" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/BuildingController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/building/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
+              <caret line="115" column="76" lean-forward="true" selection-start-line="115" selection-start-column="76" selection-end-line="115" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/admin/js/building-list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/admin/js/building-edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/AssignmentStaffApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#910#911#0" expanded="true" />
-                <element signature="e#928#929#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-              <folding>
-                <element signature="e#435#436#0" expanded="true" />
-                <element signature="e#481#482#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -183,14 +258,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="Tag Library Descriptor" />
+        <option value="Jsp File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>deleteS</find>
+      <find>dele</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,59 +276,53 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/BaseEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/utils/FormUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/mapper/ResultSetMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/converter/UserConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/BuildingEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IBuildingService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/EntityManagerFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IBuildingRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/BuildingRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/BuildingServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/converter/BuildingConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/RentAreaEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/converter/RentAreaConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IRentArea.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/UserEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BuildingDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IRentArea.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/RentAreaRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/RentAreaDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IUserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/UserDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BaseDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/converter/AssignmentStaffConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/UserApi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/AssignmentStaffEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/builder/AssigmentStaffBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/CustomerEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/CustomerServiceEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/CustomerDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/converter/CustomerConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/builder/CustomerSearchBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/ICustomerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/CustomerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/ICustomerRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/CustomerRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/CustomerApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/RentAreaService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/BuildingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/AssignmentStaffDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/JpaRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BuildingDTO.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/building-list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/common/taglib.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/AssignmentStaffApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/CustomerApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/UserApi.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/common/admin/footer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/common/admin/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/common/admin/ace-setting.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/admin/js/buildingList.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/admin/js/building-edit.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/building/edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IRentAreaService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/builder/RentAreaBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IRentAreaRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/RentAreaRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/RentAreaService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IBuildingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IAssignmentStaffService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/AssignmentStaffApi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/AssignmentStaffService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/paging/PageRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/BuildingController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/admin/js/building-list.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/building/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/BuildingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.java" />
       </list>
     </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -267,14 +338,22 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="PhpServers">
-    <servers />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="jsp-servlet-jdbc" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -285,34 +364,35 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -320,7 +400,7 @@
             </path>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -329,7 +409,25 @@
             </path>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="laptrinhjavaweb" type="462c0819:PsiDirectoryNode" />
+              <item name="builder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="laptrinhjavaweb" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -338,7 +436,7 @@
             </path>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -347,35 +445,25 @@
             </path>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="laptrinhjavaweb" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="paging" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="laptrinhjavaweb" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="laptrinhjavaweb" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -384,7 +472,7 @@
             </path>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -394,47 +482,114 @@
             </path>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp-servlet-jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="decorators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="building" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jsp-servlet-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jdbc_8_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572538349914" />
-    <property name="last_opened_file_path" value="D:/Java Web/MollyClo/workspace/molly" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573223624703" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.webservices" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.laptrinhjavaweb.repository.impl" />
-      <recent name="com.laptrinhjavaweb.repository" />
-      <recent name="com.laptrinhjavaweb.service.impl" />
-      <recent name="com.laptrinhjavaweb.service" />
-      <recent name="com.laptrinhjavaweb.api" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java web Tháng 8-2019\workspace-JAVA-WEB-2019\workspace-jsp-servlet-jdbc\jsp-servlet-jdbc\src\main\java\com\laptrinhjavaweb\DTO" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaWeb\workspace\jdbc_8_2019\src\main\webapp\views\admin\building" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -449,124 +604,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BuildingController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.laptrinhjavaweb.controller.BuildingController" />
-      <module name="jsp-servlet-jdbc" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.laptrinhjavaweb.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Unnamed" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 7.0.93" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/jsp_servlet_jdbc_war/" />
-      <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="jsp-servlet-jdbc:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/jsp_servlet_jdbc_war" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_jsp-servlet-jdbc" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="56255" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="jsp-servlet-jdbc:war" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.92" ALTERNATIVE_JRE_ENABLED="false">
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.47" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.47" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="jsp-servlet-jdbc:war">
@@ -584,7 +623,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="57832" />
+        <option name="DEBUG_PORT" value="50160" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -633,658 +672,481 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="jsp-servlet-jdbc:war" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.BuildingController" />
-      <item itemvalue="Tomcat Server.Unnamed" />
-      <item itemvalue="TomEE Server.Unnamed" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.BuildingController" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c93a25cb-c560-4239-be7c-873db09fcb53" name="Default" comment="" />
-      <created>1569164476154</created>
+      <changelist id="eed18fae-7145-469f-b92b-4065a2aeab02" name="Default Changelist" comment="" />
+      <created>1572923880097</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1569164476154</updated>
-      <workItem from="1569164478688" duration="3032000" />
-      <workItem from="1569243194073" duration="643000" />
-      <workItem from="1569286728104" duration="13694000" />
-      <workItem from="1569762254463" duration="14546000" />
-      <workItem from="1569853244871" duration="5827000" />
-      <workItem from="1569893349431" duration="2419000" />
-      <workItem from="1570110832698" duration="6049000" />
-      <workItem from="1570151735155" duration="5336000" />
-      <workItem from="1570166107304" duration="411000" />
-      <workItem from="1570374065831" duration="1323000" />
-      <workItem from="1570456372136" duration="5032000" />
-      <workItem from="1570489145658" duration="275000" />
-      <workItem from="1570511257357" duration="13720000" />
-      <workItem from="1570536780539" duration="4617000" />
-      <workItem from="1570632397350" duration="5951000" />
-      <workItem from="1570669675658" duration="633000" />
-      <workItem from="1570723697028" duration="664000" />
-      <workItem from="1570756393882" duration="1864000" />
-      <workItem from="1570803765399" duration="601000" />
-      <workItem from="1571064772897" duration="2702000" />
-      <workItem from="1571128267280" duration="5261000" />
-      <workItem from="1571278249781" duration="1205000" />
-      <workItem from="1571407724082" duration="5254000" />
-      <workItem from="1571444465593" duration="25634000" />
-      <workItem from="1571486477613" duration="3982000" />
-      <workItem from="1571669220371" duration="1968000" />
-      <workItem from="1571706725455" duration="3513000" />
-      <workItem from="1571729760204" duration="655000" />
-      <workItem from="1571755096539" duration="2465000" />
-      <workItem from="1571787846176" duration="5025000" />
-      <workItem from="1571835011304" duration="1788000" />
-      <workItem from="1572098532932" duration="591000" />
-      <workItem from="1572180683388" duration="4440000" />
-      <workItem from="1572266023415" duration="3791000" />
-      <workItem from="1572271594404" duration="1793000" />
-      <workItem from="1572277474749" duration="4618000" />
-      <workItem from="1572307454134" duration="5599000" />
-      <workItem from="1572314128592" duration="3525000" />
-      <workItem from="1572324451399" duration="7277000" />
-      <workItem from="1572348579787" duration="8332000" />
-      <workItem from="1572437494258" duration="1732000" />
-      <workItem from="1572506882470" duration="1717000" />
-      <workItem from="1572528077443" duration="3945000" />
-      <workItem from="1572597225551" duration="858000" />
-      <workItem from="1572619993967" duration="4977000" />
-      <workItem from="1572693101130" duration="5283000" />
+      <updated>1572923880097</updated>
+      <workItem from="1572923884532" duration="3103000" />
+      <workItem from="1572959412507" duration="2495000" />
+      <workItem from="1573006638447" duration="3515000" />
+      <workItem from="1573092867598" duration="7696000" />
+      <workItem from="1573110026839" duration="1099000" />
+      <workItem from="1573174147650" duration="594000" />
+      <workItem from="1573180229223" duration="16862000" />
+      <workItem from="1573208188173" duration="1176000" />
+      <workItem from="1573213845658" duration="8649000" />
     </task>
-    <task id="LOCAL-00001" summary="update assign building">
-      <created>1572699449679</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1572699449679</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204567000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="45189000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1382" height="744" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2934947" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2818792" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info id="Learn" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.64372164" weight="0.60392797" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.39934534" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" weight="0.3289689" />
-      <window_info anchor="bottom" id="Application Servers" order="9" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.35627836" side_tool="true" weight="0.60392797" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.36535552" weight="0.3289689" />
-      <window_info anchor="right" id="Maven" order="0" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.24962178" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Database" order="9" weight="0.32980332" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Learn" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25340393" />
-      <window_info id="Structure" order="2" weight="0.25" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49924356" weight="0.60392797" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.39934534" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" weight="0.3289689" />
-      <window_info anchor="bottom" id="Application Servers" order="9" weight="0.32913387" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32913387" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.36535552" weight="0.3289689" />
-      <window_info anchor="right" id="Maven" order="0" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.24962178" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-    </layout-to-restore>
+      <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="update assign building" />
-    <option name="LAST_COMMIT_MESSAGE" value="update assign building" />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/BuildingController.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/paging/PageRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/AssignmentStaffDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/RentAreaEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/mapper/ResultSetMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/RentAreaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="68">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BaseDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IRentAreaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/converter/UserConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/converter/RentAreaConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/converter/AssignmentStaffConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IBuildingRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IRentAreaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/builder/BuildingSearchBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/AssignmentStaffEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/CustomerServiceEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/CustomerEntity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/CustomerServiceDTO.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/CustomerDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/converter/CustomerConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/builder/CustomerSearchBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/ICustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/CustomerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/UserApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/ICustomerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/CustomerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IUserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/entity/BuildingEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
-          <folding>
-            <element signature="e#2238#2239#0" expanded="true" />
-            <element signature="e#2270#2271#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/converter/BuildingConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/RentAreaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IBuildingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/BuildingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BuildingDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" selection-start-line="30" selection-start-column="32" selection-end-line="31" />
-          <folding>
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/BuildingRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-          <folding>
-            <element signature="e#1525#1526#0" expanded="true" />
-            <element signature="e#1569#1570#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/RentAreaDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="36" column="78" selection-start-line="36" selection-start-column="78" selection-end-line="36" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/builder/AssigmentStaffBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/JpaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
+        <state relative-caret-position="85">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="425">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BaseDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" column="53" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/converter/BuildingConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorator.tld" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/admin/assets/css/ace.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12903" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
           <folding>
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/taglib.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="64" selection-start-column="64" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/ace-setting.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+          <folding>
+            <element signature="e#949#955#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="53" selection-end-line="1" selection-end-column="53" />
+          <folding>
+            <element signature="e#184#190#0#HTML" expanded="true" />
+            <element signature="e#228#234#0#HTML" expanded="true" />
+            <element signature="e#235#241#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="55" column="67" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/UserApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/AssignmentStaffApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/CustomerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/building/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2482">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IRentAreaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/builder/CustomerSearchBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/builder/BuildingSearchBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/RentAreaDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/builder/AssigmentStaffBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/builder/RentAreaBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding>
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+        <state relative-caret-position="459">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IRentAreaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/RentAreaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IBuildingRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IAssignmentStaffService.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/paging/Pageable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/paging/PageRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/AssignmentStaffApi.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/BuildingRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/AssignmentStaffDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="273">
+          <caret line="61" column="56" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BuildingDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="350" column="71" lean-forward="true" selection-start-line="350" selection-start-column="71" selection-end-line="350" selection-end-column="71" />
+        <state relative-caret-position="254">
+          <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/admin/js/building-edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="68" column="58" lean-forward="true" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/BuildingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/AssignmentStaffService.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="126" column="34" lean-forward="true" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/RentAreaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IBuildingService.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/BuildingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="108" column="44" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="327" column="34" lean-forward="true" selection-start-line="327" selection-start-column="34" selection-end-line="327" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/building/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="115" column="76" lean-forward="true" selection-start-line="115" selection-start-column="76" selection-end-line="115" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/admin/js/building-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
         </state>
       </provider>
     </entry>

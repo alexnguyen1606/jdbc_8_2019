@@ -39,3 +39,48 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.ui 2 2 2019-09-27 22:44:39.392
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2019-11-05 08:31:31.069 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.8.0_152
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 4 4 2019-11-05 08:31:56.773
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2019-11-05 08:32:00.399
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 unknown 0 0 2019-11-05 08:32:00.399
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2019-11-05 08:32:00.399
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2019-11-05 08:32:00.399
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2019-11-05 08:32:00.399
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2019-11-05 08:32:00.399
+!MESSAGE Unable to restore perspective: Workspace - Java EE.
+!SUBENTRY 2 org.eclipse.ui 0 0 2019-11-05 08:32:00.399
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2019-11-05 08:32:00.399
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2019-11-05 08:32:00.399
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2019-11-05 08:32:00.399
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2019-11-05 08:32:00.399
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2019-11-05 08:32:00.399
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2019-11-05 08:32:00.399
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2019-11-05 08:32:00.399
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2019-11-05 08:32:00.399
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 0 2019-11-05 08:32:00.399
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 unknown 0 0 2019-11-05 08:32:00.399
+!MESSAGE OK

@@ -24,7 +24,7 @@ public class UserRepository extends SimpleJpaRepository<UserEntity> implements I
 
     @Override
     public List<UserEntity> findAllByAssigmentStaff(long builingId) {
-        String sql = creStringSqlFindAllByAssignmentStaff(builingId);
+        String sql = createStringSqlFindAllByAssignmentStaff(builingId);
         return this.findAll(sql);
     }
 
@@ -36,7 +36,7 @@ public class UserRepository extends SimpleJpaRepository<UserEntity> implements I
         sql.append(roleId+")");
         return sql.toString();
     }
-    private String creStringSqlFindAllByAssignmentStaff(long buildingId){
+    private String createStringSqlFindAllByAssignmentStaff(long buildingId){
         StringBuilder sql = new StringBuilder("select A.id,A.fullname from user as A inner join assignmentstaff as B " +
                 "ON A.id = B.staffid where  B.buildingid = ");
         sql.append(buildingId);

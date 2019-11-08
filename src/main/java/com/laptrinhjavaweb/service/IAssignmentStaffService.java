@@ -11,9 +11,10 @@ public interface IAssignmentStaffService {
     AssignmentStaffDTO save(AssignmentStaffDTO assignmentStaffDTO);
     AssignmentStaffDTO findOne(Long id);
     AssignmentStaffDTO update(AssignmentStaffDTO assignmentStaffDTO);
-    List<AssignmentStaffDTO> delete(Long[] ids);
-    List<AssignmentStaffDTO> deleteOne(Long id);
+    void delete(Long[] ids);
+    void deleteOne(Long id);
     List<AssignmentStaffDTO> findByBuildingId(Long buildingId);
-    List<AssignmentStaffDTO> deleteByBuildingIdAndStaffId(Long buildingId,Long staffId);
+    void deleteByBuildingIdAndStaffId(Long buildingId,Long staffId);
+    void deleteByBuildingId(Long buildingId);
     List<AssignmentStaffDTO> findAll();
 }

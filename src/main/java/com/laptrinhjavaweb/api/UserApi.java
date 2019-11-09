@@ -32,11 +32,11 @@ public class UserApi extends HttpServlet {
         ObjectMapper objectMapper = new ObjectMapper();
         request.setCharacterEncoding("UTF-8");
         response.setContentType("application/json");
-        BuildingDTO buildingDTO =  FormUtil.toModel(BuildingDTO.class,request);
+      // BuildingDTO buildingDTO = HttpUtil.of(request.getReader()).toModel(BuildingDTO.class);
+        BuildingDTO buildingDTO = FormUtil.toModel(BuildingDTO.class,request);
         IUserService userService = new UserService();
         objectMapper.writeValue(response.getOutputStream(),
                 userService.findByStatusAndRoleIdAndBuildingId(1,2,buildingDTO.getId()));
-
     }
 }
 

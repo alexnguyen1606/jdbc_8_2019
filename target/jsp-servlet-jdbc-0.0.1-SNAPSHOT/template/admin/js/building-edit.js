@@ -11,6 +11,9 @@ $('#btnAddBuilding').click(function(){
         }
     });
     data['buildingTypes'] = buildingTypes;
+    addBuilding(data);
+})
+function addBuilding(data){
     $.ajax({
         type: "POST",
         url: "http://localhost:8080/api-building",
@@ -19,10 +22,11 @@ $('#btnAddBuilding').click(function(){
         contentType:"application/json",
         success: function (response) {
             console.log("success");
+            console.log(response);
         },
         error: function(response){
             console.log("fail");
             console.log(response);
         }
     });
-})
+}

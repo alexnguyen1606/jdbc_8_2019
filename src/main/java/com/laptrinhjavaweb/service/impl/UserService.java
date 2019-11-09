@@ -1,9 +1,11 @@
 package com.laptrinhjavaweb.service.impl;
 
+import java.lang.reflect.Field;
 import java.util.*;
 import java.util.stream.Collectors;
 
 import com.laptrinhjavaweb.DTO.UserDTO;
+import com.laptrinhjavaweb.builder.UserBuilder;
 import com.laptrinhjavaweb.converter.UserConverter;
 import com.laptrinhjavaweb.entity.UserEntity;
 import com.laptrinhjavaweb.repository.IUserRepository;
@@ -56,10 +58,9 @@ public class UserService implements IUserService{
 			Collectors.toMap(UserDTO::getId,item-> item )
 		);
 
-		List<UserDTO> listB = userRepository.findAllByAssigmentStaff(buildingId)
+        List<UserDTO> listB = userRepository.findAllByAssigmentStaff(buildingId)
 				.stream().map(item -> converter.convertToDTO(item))
 				.collect(Collectors.toList());
-
 		List<UserDTO> result = new ArrayList<>();
 		for (Map.Entry item : listA.entrySet()){
 			UserDTO userListA = (UserDTO) item.getValue();
@@ -67,13 +68,42 @@ public class UserService implements IUserService{
 				if (item.getKey()==userDTO.getId()) {
 					userListA.setChecked("checked");
 				}
-				else{
-					userListA.setChecked("");
-				}
 			}
 			result.add(userListA);
 		}
 		return result;
+	}
+
+	@Override
+	public List<UserDTO> findByStatus(int status) {
+		UserBuilder builder = new UserBuilder.Builder()
+				.setStatus(status)
+				.build();
+		Map<String,Object> properties = convertToProperties(builder);
+		return userRepository.finAll(properties).stream()
+				.map(item -> converter.convertToDTO(item)).collect(Collectors.toList());
+	}
+
+	@Override
+	public List<UserDTO> findByStatusAndRole(int status, long roleId) {
+		return userRepository.findAllByStatusAndRole(status,roleId).stream()
+				.map(item-> converter.convertToDTO(item)).collect(Collectors.toList());
+	}
+
+	private Map<String,Object> convertToProperties(UserBuilder builder){
+		Map<String,Object> properties = new HashMap<>();
+		try {
+			Field[] fields = builder.getClass().getDeclaredFields();
+			for (Field field : fields){
+				field.setAccessible(true);
+				if (field.getName().equals("status")){
+					properties.put(field.getName().toLowerCase(),field.get(builder));
+				}
+			}
+		}catch (Exception e){
+			System.out.println(e.toString());
+		}
+		return properties;
 	}
 
 }

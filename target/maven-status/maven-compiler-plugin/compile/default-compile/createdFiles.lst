@@ -2,6 +2,7 @@ com\laptrinhjavaweb\converter\RentAreaConverter.class
 com\laptrinhjavaweb\DTO\UserDTO.class
 com\laptrinhjavaweb\builder\RentAreaBuilder$1.class
 com\laptrinhjavaweb\controller\BuildingController.class
+com\laptrinhjavaweb\builder\UserBuilder$1.class
 com\laptrinhjavaweb\paging\Pageable.class
 com\laptrinhjavaweb\entity\CustomerServiceEntity.class
 com\laptrinhjavaweb\repository\impl\SimpleJpaRepository.class
@@ -12,6 +13,7 @@ com\laptrinhjavaweb\service\impl\UserService.class
 com\laptrinhjavaweb\builder\BuildingSearchBuilder.class
 com\laptrinhjavaweb\DTO\CustomerServiceDTO.class
 com\laptrinhjavaweb\mapper\ResultSetMapper$ColumnModel.class
+com\laptrinhjavaweb\builder\UserBuilder.class
 com\laptrinhjavaweb\repository\impl\EntityManagerFactory.class
 com\laptrinhjavaweb\repository\IRentAreaRepository.class
 com\laptrinhjavaweb\annotation\Table.class
@@ -32,6 +34,7 @@ com\laptrinhjavaweb\service\IUserService.class
 com\laptrinhjavaweb\entity\CustomerEntity.class
 com\laptrinhjavaweb\repository\IBuildingRepository.class
 com\laptrinhjavaweb\entity\BaseEntity.class
+com\laptrinhjavaweb\builder\UserBuilder$Builder.class
 com\laptrinhjavaweb\paging\PageRequest.class
 com\laptrinhjavaweb\repository\ICustomerRepository.class
 com\laptrinhjavaweb\builder\AssigmentStaffBuilder$1.class

@@ -24,7 +24,7 @@
 
     <!-- ace settings handler -->
     <script src="<c:url value='/template/admin/assets/js/ace-extra.min.js' />"></script>
-
+    <%--<link rel="stylesheet" href="<c:url value='https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css'/> ">--%>
 </head>
 
 <body class="no-skin">
@@ -42,7 +42,7 @@
         </div>
     </div>
 
-<%@ include file="/common/admin/footer.jsp"%>
+<%--<%@ include file="/common/admin/footer.jsp"%>--%>
 </div> <!-- main container -->
 
 <script src="<c:url value='/template/admin/assets/js/jquery.2.1.1.min.js' />"></script>
@@ -59,7 +59,7 @@
 <script src="<c:url value='/template/admin/assets/js/ace.min.js' />"></script>
 <script src="<c:url value='/template/admin/js/building-list.js'/>"></script>
 <script src="<c:url value='/template/admin/js/building-edit.js'/> "></script>
-
+<%--<script src="<c:url value='https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js'/> "></script>--%>
 
 </body>
 </html>

@@ -30,12 +30,12 @@
         <h1>
             Dashboard
             <small>
-                <i class="ace-icon fa fa-angle-double-right"></i>
-                Tòa nhà
+                <a href="/admin-building?action=LIST"><i class="ace-icon fa fa-angle-double-right"></i>
+                    Tòa nhà</a>
             </small>
             <small>
-                <i class="ace-icon fa fa-angle-double-right"></i>
-                Edit
+                <a href="/admin-building?action=EDIT"><i class="ace-icon fa fa-angle-double-right"></i>
+                    EDIT</a>
             </small>
         </h1>
     </div><!-- /.page-header -->

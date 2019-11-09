@@ -58,4 +58,5 @@ D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\annotation\Ta
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\builder\AssigmentStaffBuilder.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\DTO\CustomerDTO.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\ICustomerService.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\builder\UserBuilder.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\IUserService.java

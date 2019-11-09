@@ -33,8 +33,8 @@
         <h1>
             Dashboard
             <small>
-                <i class="ace-icon fa fa-angle-double-right"></i>
-                Tòa nhà
+                <a href="${buildingURL}?action=LIST"><i class="ace-icon fa fa-angle-double-right"></i>
+                Tòa nhà</a>
             </small>
         </h1>
     </div><!-- /.page-header -->
@@ -113,10 +113,9 @@
                                     <label for="staffId">Chọn nhân viên phụ trách</label>
                                     <select id="staffId" name="staffId" class="form-control">
                                         <option value="">Chọn nhân viên</option>
-                                        <option value="volvo">Volvo</option>
-                                        <option value="saab">Saab</option>
-                                        <option value="opel">Opel</option>
-                                        <option value="audi">Audi</option>
+                                        <c:forEach var="item" items="${users}">
+                                            <option value="${item.id}">${item.fullName}</option>
+                                        </c:forEach>
                                     </select>
                                 </div>
                                 <div class="col-sm-5">
@@ -193,19 +192,11 @@
             <div class="modal-body">
                 <table class="table table-hover" id="staffList">
                     <thead>
-                    <th></th>
+                     <tr>
+                    <th>Check</th>
                     <th>Tên nhân viên</th>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><input type="checkbox" value="1" id="checkbox_1" ></td>
-                        <td>Nhân viên a</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" value="2" id="checkbox_2" ></td>
-                        <td>Nhân viên a</td>
-                    </tr>
-                    </tbody>
+                    </tr>   
+                </thead>
                 </table>
                 <input type="hidden" id="buildingId" name="buildingId" value="">
             </div>

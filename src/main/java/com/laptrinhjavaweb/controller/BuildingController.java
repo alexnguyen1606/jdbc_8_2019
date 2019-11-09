@@ -5,7 +5,9 @@ import com.laptrinhjavaweb.builder.BuildingSearchBuilder;
 import com.laptrinhjavaweb.paging.PageRequest;
 import com.laptrinhjavaweb.paging.Pageable;
 import com.laptrinhjavaweb.service.IBuildingService;
+import com.laptrinhjavaweb.service.IUserService;
 import com.laptrinhjavaweb.service.impl.BuildingService;
+import com.laptrinhjavaweb.service.impl.UserService;
 import com.laptrinhjavaweb.utils.FormUtil;
 
 import javax.servlet.RequestDispatcher;
@@ -21,6 +23,7 @@ import java.util.List;
 @WebServlet(urlPatterns = {"/admin-building"})
 public class BuildingController extends HttpServlet {
     private IBuildingService buildingService = new BuildingService();
+    private IUserService userService = new UserService();
     protected void doPost (HttpServletRequest request, HttpServletResponse response)throws SecurityException, IOException {
 
     }
@@ -48,6 +51,7 @@ public class BuildingController extends HttpServlet {
                     .build();
             Pageable pageable =new PageRequest(null,null);
             List<BuildingDTO> buildings = buildingService.findAll(builder,pageable);
+            request.setAttribute("users",userService.findByStatusAndRole(1,2));
             request.setAttribute("buildings",buildings);
             RequestDispatcher requestDispatcher = request.getRequestDispatcher(url);
             requestDispatcher.forward(request,response);

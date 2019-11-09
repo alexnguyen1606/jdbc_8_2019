@@ -7,6 +7,24 @@ public class UserDTO extends BaseDTO implements Serializable {
 	private String userName;
 	private String fullName;
 	private String checked;
+	private String passWord;
+	private int status;
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
+	public String getPassWord() {
+		return passWord;
+	}
+
+	public void setPassWord(String passWord) {
+		this.passWord = passWord;
+	}
+
 
 	public String getChecked() {
 		return checked;

@@ -1,9 +1,10 @@
 function assignmentBuilding(buildingId){
-    openModalAssignmentBuilding();
+
     var x ={};
     x['id'] = buildingId;
-    findUser(x);
+    findUser(buildingId);
     $('#buildingId').val(buildingId);
+    openModalAssignmentBuilding();
     console.log($('#buildingId').val());
 }
 
@@ -24,7 +25,7 @@ $('#btnAssignBuilding').click(function (e) {
 function assignStaff(data){
     $.ajax({
         type: "POST",
-        url: "/api-assignmentstaff",
+        url: "http://localhost:8080/api-assignmentstaff",
         data: JSON.stringify(data),
         dataType: "json",
         contentType:"application/json",
@@ -43,6 +44,7 @@ $('#btnDeleteBuilding').click(function (e) {
     }).get();
     data['idDelete'] = buildingIds;
     deleteBuilding(data);
+    location.reload(true);
 });
 function deleteBuilding(data){
     $.ajax({
@@ -65,19 +67,28 @@ $('#btnSearchBuilding').click(function (e) {
 function findUser(data){
     $.ajax({
         type: "GET",
-        url: "http://localhost:8080/api-user",
-        data: JSON.stringify(data),
+        url: "http://localhost:8080/api-user"+"?id="+data,
+        //data: data,
         dataType: "json",
         contentType:"application/json",
-        success: function (response) {
-        $.each(response, function (i, v) { 
-             $('#staffList').find('tbody').append('<tr>')
-             .append('<td> <input type="checkbox" value="'+v.id+'"  '+v.checked+'" id="'+'checkbox_'+v.id+'" ></td>')
-             .append('<td>'+v.fullName+'</td>')
-             .append('</tr>');
-        });
+        success: function (data) {
+            $('#staffList').empty();
+           var staffs = showUser(data);
+            $('#staffList').append(staffs);
+            console.log(data);
         },error: function(response){
             console.log("fail");
+            console.log(response);
         }
     });
+}
+function showUser(data){
+    var staffs ='';
+    $.each(data,function (key,value) {
+        staffs +='<tr>';
+        staffs +='<td><input type="checkbox" value="'+value.id+'" id="check_'+value.id+'" '+value.checked+' </td>';
+        staffs +='<td>'+value.fullName+'</td>'
+        staffs +='</tr>'
+    });
+    return staffs;
 }

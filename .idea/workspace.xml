@@ -7,149 +7,267 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eed18fae-7145-469f-b92b-4065a2aeab02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/builder/RentAreaBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/admin/ace-setting.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/admin/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/admin/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/taglib.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/js/building-edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/js/building-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/building/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/building/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/jsp_servlet_jdbc_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/jsp_servlet_jdbc_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_api_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/version.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/data_estatejdbc8_2019.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/data_estatejdbc8_2019.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsp-servlet-jdbc.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BuildingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BuildingDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/AssignmentStaffApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/AssignmentStaffApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/CustomerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/CustomerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/UserApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/BuildingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/BuildingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/paging/PageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/paging/PageRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IRentAreaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IRentAreaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/RentAreaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/RentAreaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IAssignmentStaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IAssignmentStaffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IBuildingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IBuildingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IRentAreaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IRentAreaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/AssignmentStaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/AssignmentStaffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/BuildingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/BuildingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/RentAreaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/RentAreaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/common/admin/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/common/admin/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/common/admin/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/common/admin/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/assets/css/ace.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/assets/css/ace.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/building-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/js/building-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/building/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/building/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/building/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/building/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/jsp-servlet-jdbc.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/DTO/BuildingDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/DTO/BuildingDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/annotation/Column.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/annotation/Column.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/annotation/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/annotation/Entity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/annotation/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/annotation/Table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/AssignmentStaffApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/AssignmentStaffApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/BuildingApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/BuildingApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/CustomerApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/CustomerApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/UserApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/api/UserApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/controller/BuildingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/controller/BuildingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/mapper/ResultSetMapper$ColumnModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/mapper/ResultSetMapper$ColumnModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/mapper/ResultSetMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/mapper/ResultSetMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/paging/PageRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/paging/PageRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/paging/Pageable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/paging/Pageable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/IRentAreaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/IRentAreaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/RentAreaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/RentAreaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/repository/impl/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/IAssignmentStaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/IAssignmentStaffService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/IBuildingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/IBuildingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/IRentAreaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/IRentAreaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/AssignmentStaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/AssignmentStaffService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/BuildingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/BuildingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/RentAreaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/RentAreaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/service/impl/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/utils/HttpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laptrinhjavaweb/utils/HttpUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/META-INF/jsp-servlet-jdbc.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/DTO/BuildingDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/DTO/BuildingDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Column.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Column.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Entity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/AssignmentStaffApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/AssignmentStaffApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/BuildingApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/BuildingApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/CustomerApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/CustomerApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/UserApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/UserApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/controller/BuildingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/controller/BuildingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/mapper/ResultSetMapper$ColumnModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/mapper/ResultSetMapper$ColumnModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/mapper/ResultSetMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/mapper/ResultSetMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/paging/PageRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/paging/PageRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/paging/Pageable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/paging/Pageable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/IRentAreaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/IRentAreaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/RentAreaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/RentAreaRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IAssignmentStaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IAssignmentStaffService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IBuildingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IBuildingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IRentAreaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IRentAreaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/AssignmentStaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/AssignmentStaffService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/BuildingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/BuildingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/RentAreaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/RentAreaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/utils/HttpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/utils/HttpUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/views/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/views/admin/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/laptrinhjavaweb/jsp-servlet-jdbc/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/laptrinhjavaweb/jsp-servlet-jdbc/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/DTO/AssignmentStaffDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/DTO/BaseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/DTO/BuildingDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/DTO/CustomerDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/DTO/CustomerServiceDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/DTO/RentAreaDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/DTO/UserDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Column.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/annotation/Table.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/AssignmentStaffApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/BuildingApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/CustomerApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/api/UserApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/AssigmentStaffBuilder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/AssigmentStaffBuilder$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/AssigmentStaffBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/BuildingSearchBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/CustomerSearchBuilder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/CustomerSearchBuilder$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/CustomerSearchBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/RentAreaBuilder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/RentAreaBuilder$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/builder/RentAreaBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/controller/BuildingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/controller/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/converter/AssignmentStaffConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/converter/BuildingConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/converter/CustomerConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/converter/RentAreaConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/converter/UserConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/entity/AssignmentStaffEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/entity/BaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/entity/BuildingEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/entity/CustomerEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/entity/CustomerServiceEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/entity/RentAreaEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/entity/UserEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/mapper/ResultSetMapper$ColumnModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/mapper/ResultSetMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/paging/PageRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/paging/Pageable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/IBuildingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/ICustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/IRentAreaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/IUserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/JpaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/BuildingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/CustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/EntityManagerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/RentAreaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/repository/impl/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IAssignmentStaffService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IBuildingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/ICustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IRentAreaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/IUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/AssignmentStaffService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/BuildingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/RentAreaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/service/impl/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/utils/FormUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/com/laptrinhjavaweb/utils/HttpUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/decorators.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/lib/commons-lang3-3.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/lib/modelmapper-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/lib/protobuf-java-3.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/lib/sitemesh-2.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/common/admin/ace-setting.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/common/admin/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/common/admin/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/common/admin/menu.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/common/taglib.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/decorators/admin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/avatars/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/avatars/avatar1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/avatars/avatar2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/avatars/avatar3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/avatars/avatar4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/avatars/avatar5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/avatars/profile-pic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/avatars/user.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/ace-ie.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/ace-part2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/ace-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/ace.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/bootstrap-datetimepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/bootstrap-duallistbox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/bootstrap-editable.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/bootstrap-multiselect.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/bootstrap-timepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/chosen-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/chosen-sprite@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/chosen.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/colorbox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/colorpicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/colorpicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/datepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/daterangepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/dropzone.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/fullcalendar.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/images/border.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/images/controls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/images/loading_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/images/meteorshower2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/images/overlay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/images/pattern.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/img/alpha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/img/hue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/img/saturation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/jquery-ui.custom.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/jquery.gritter.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/prettify.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/select2-spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/select2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/select2x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/ui.jqgrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/css/ui.jqgrid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/font-awesome/4.1.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/font-awesome/4.1.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/font-awesome/4.1.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/font-awesome/4.1.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/font-awesome/4.1.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/font-awesome/4.2.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/font-awesome/4.2.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/font-awesome/4.2.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/font-awesome/4.2.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/fonts/fonts.googleapis.com.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/email1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/email2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/email3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/email4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/gallery/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/gallery/image-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/gallery/image-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/gallery/image-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/gallery/image-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/gallery/image-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/gallery/image-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/gallery/thumb-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/gallery/thumb-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/gallery/thumb-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/gallery/thumb-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/gallery/thumb-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/gallery/thumb-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/spritemap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/images/spritemap@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/img/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/ace-editable.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/ace-elements.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/ace-extra.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/ace.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/bootbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/bootstrap-colorpicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/bootstrap-datepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/bootstrap-datetimepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/bootstrap-editable.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/bootstrap-markdown.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/bootstrap-multiselect.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/bootstrap-tag.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/bootstrap-timepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/bootstrap-wysiwyg.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/chosen.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/dataTables.colVis.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/dataTables.tableTools.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/daterangepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/dropzone.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/excanvas.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/fuelux.spinner.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/fuelux.tree.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/fuelux.wizard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/fullcalendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/grid.locale-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/html5shiv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery-ui.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.1.11.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.2.1.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.autosize.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.bootstrap-duallistbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.colorbox-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.colorbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.dataTables.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.dataTables.bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.dataTables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.easypiechart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.flot.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.flot.pie.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.flot.resize.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.gritter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.hotkeys.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.inputlimiter.1.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.jqGrid.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.knob.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.maskedinput.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.mobile.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.nestable.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.raty.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.slimscroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.sparkline.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.ui.touch-punch.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/jquery1x.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/markdown.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/prettify.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/respond.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/select2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/spin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/js/typeahead.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/assets/swf/copy_csv_xls_pdf.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/js/building-edit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/template/admin/js/building-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/views/admin/building/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/views/admin/building/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jsp-servlet-jdbc-0.0.1-SNAPSHOT/views/admin/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -163,65 +281,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="68" column="58" lean-forward="true" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IBuildingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/BuildingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="108" column="44" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/RentAreaService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="327" column="34" lean-forward="true" selection-start-line="327" selection-start-column="34" selection-end-line="327" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/AssignmentStaffService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="126" column="34" lean-forward="true" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/BuildingController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -229,26 +290,86 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/building/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="115" column="76" lean-forward="true" selection-start-line="115" selection-start-column="76" selection-end-line="115" selection-end-column="76" />
+            <state relative-caret-position="163">
+              <caret line="37" column="20" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="37" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/admin/js/building-list.js">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/building/edit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+            <state relative-caret-position="372">
+              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/admin/js/building-edit.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/UserApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="253">
+              <caret line="34" column="77" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="37" column="76" selection-start-line="37" selection-start-column="76" selection-end-line="37" selection-end-column="76" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="78" column="6" lean-forward="true" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/header.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/footer.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/AssignmentStaffApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -268,6 +389,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>dele</find>
+      <find>main-content-inner</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -281,23 +403,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BuildingDTO.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/admin/building-list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/common/taglib.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/AssignmentStaffApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/CustomerApi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/UserApi.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/common/admin/footer.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/common/admin/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/common/admin/ace-setting.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/template/admin/js/buildingList.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/template/admin/js/building-edit.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/building/edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IAssignmentStaffRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/AssignmentStaffRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IRentAreaService.java" />
@@ -311,10 +426,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/paging/PageRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/BuildingController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/template/admin/js/building-list.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/building/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/BuildingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/admin/js/building-list.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/UserApi.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/common/admin/footer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/admin/assets/css/ace.min.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/common/admin/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/building/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/building/edit.jsp" />
       </list>
     </option>
   </component>
@@ -363,7 +486,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -578,12 +700,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573223624703" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573225430632" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.webservices" />
   </component>
@@ -694,18 +817,19 @@
       <workItem from="1573174147650" duration="594000" />
       <workItem from="1573180229223" duration="16862000" />
       <workItem from="1573208188173" duration="1176000" />
-      <workItem from="1573213845658" duration="8649000" />
+      <workItem from="1573213845658" duration="9178000" />
+      <workItem from="1573258228647" duration="5164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45189000" />
+    <option name="totallyTimeSpent" value="50882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2818792" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28590605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -715,7 +839,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -755,41 +879,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/AssignmentStaffDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IUserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BaseDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="79" column="53" selection-start-line="79" selection-start-column="53" selection-end-line="79" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/converter/BuildingConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -826,25 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/admin/assets/css/ace.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12903" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/common/taglib.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -862,64 +932,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="53" selection-end-line="1" selection-end-column="53" />
-          <folding>
-            <element signature="e#184#190#0#HTML" expanded="true" />
-            <element signature="e#228#234#0#HTML" expanded="true" />
-            <element signature="e#235#241#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="55" column="67" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/UserApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/AssignmentStaffApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/CustomerApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/building/edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2482">
-          <caret line="146" selection-start-line="146" selection-end-line="146" />
         </state>
       </provider>
     </entry>
@@ -1063,55 +1079,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="61" column="56" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/BuildingDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/admin/js/building-edit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="68" column="58" lean-forward="true" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/BuildingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/AssignmentStaffService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="126" column="34" lean-forward="true" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/RentAreaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1124,29 +1095,178 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/BuildingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="1598">
           <caret line="108" column="44" selection-start-line="108" selection-start-column="44" selection-end-line="108" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/RentAreaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/SimpleJpaRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="327" column="34" lean-forward="true" selection-start-line="327" selection-start-column="34" selection-end-line="327" selection-end-column="34" />
+        <state relative-caret-position="5304">
+          <caret line="327" column="34" selection-start-line="327" selection-start-column="34" selection-end-line="327" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/building/list.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/AssignmentStaffService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="115" column="76" lean-forward="true" selection-start-line="115" selection-start-column="76" selection-end-line="115" selection-end-column="76" />
+        <state relative-caret-position="1887">
+          <caret line="126" column="34" selection-start-line="126" selection-start-column="34" selection-end-line="126" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/controller/BuildingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/admin/js/building-edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/CustomerApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/service/impl/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="51" column="54" lean-forward="true" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/IUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/repository/impl/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/DTO/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/template/admin/js/building-list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        <state relative-caret-position="502">
+          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/BuildingApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/AssignmentStaffApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/laptrinhjavaweb/api/UserApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="34" column="77" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/admin/assets/css/ace.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret column="73908" selection-start-column="73908" selection-end-column="73908" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="37" column="76" selection-start-line="37" selection-start-column="76" selection-end-line="37" selection-end-column="76" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="78" column="6" lean-forward="true" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/building/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/building/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
         </state>
       </provider>
     </entry>

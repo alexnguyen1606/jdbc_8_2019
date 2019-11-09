@@ -31,7 +31,11 @@
             Dashboard
             <small>
                 <i class="ace-icon fa fa-angle-double-right"></i>
-                overview &amp; stats
+                Tòa nhà
+            </small>
+            <small>
+                <i class="ace-icon fa fa-angle-double-right"></i>
+                Edit
             </small>
         </h1>
     </div><!-- /.page-header -->

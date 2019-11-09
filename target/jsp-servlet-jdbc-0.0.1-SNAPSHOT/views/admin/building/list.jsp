@@ -34,7 +34,7 @@
             Dashboard
             <small>
                 <i class="ace-icon fa fa-angle-double-right"></i>
-                overview &amp; stats
+                Tòa nhà
             </small>
         </h1>
     </div><!-- /.page-header -->
@@ -184,7 +184,6 @@
 </div><!-- /.page-content -->
 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">

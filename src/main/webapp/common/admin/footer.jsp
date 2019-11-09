@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:include page="/common/taglib.jsp"></jsp:include>
 <div class="footer">
-    <div class="footer-inner">
+    <div class="footer-inner" style="bottom: -80px">
         <div class="footer-content">
 						<span class="bigger-120">
 							<span class="blue bolder">Ace</span>

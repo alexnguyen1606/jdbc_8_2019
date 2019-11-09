@@ -11,7 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-    Xin chào
-    <a href="/admin-building">buildinga abd</a>aa
+
 </body>
 </html>

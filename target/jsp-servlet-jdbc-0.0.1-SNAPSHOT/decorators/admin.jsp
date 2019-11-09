@@ -35,7 +35,7 @@
     </script>
     <%@include file="/common/admin/menu.jsp" %>
     <div class="main-content">
-        <div class="main-content-inner">
+        <div class="main-content-inner" style="position: absolute;width: 88%">
 
 
         <dec:body></dec:body>

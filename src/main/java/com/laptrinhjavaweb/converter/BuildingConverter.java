@@ -2,6 +2,7 @@ package com.laptrinhjavaweb.converter;
 
 import com.laptrinhjavaweb.DTO.BuildingDTO;
 import com.laptrinhjavaweb.entity.BuildingEntity;
+import com.laptrinhjavaweb.enums.BuildingTypesEnum;
 import com.laptrinhjavaweb.enums.DistrictsEnum;
 import com.laptrinhjavaweb.service.IBuildingService;
 import com.laptrinhjavaweb.service.IRentAreaService;
@@ -12,6 +13,7 @@ import org.modelmapper.ModelMapper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class BuildingConverter {
     private IRentAreaService areaService;
@@ -24,6 +26,7 @@ public class BuildingConverter {
         dto.setBuildingTypes(convertToBuildingTypes(buildingEntity.getType()));
         dto.setAreaRent(areaService.getAllAreaRentByBuildingId(dto.getId()));
         dto.setAddress(getAddress(dto));
+        dto.setTypeInView(getType(dto.getType()));
         return dto;
     }
     public BuildingEntity covertToEntity(BuildingDTO buildingDTO){
@@ -52,7 +55,6 @@ public class BuildingConverter {
         else {
             return new String[]{};
         }
-
     }
     private String convertToTypes(String[] buildingTypes){
         StringBuilder result = new StringBuilder("");
@@ -60,5 +62,20 @@ public class BuildingConverter {
             result.append(String.join(",",buildingTypes));
         }
         return result.toString();
+    }
+    private String getType(String types){
+        StringBuilder type = new StringBuilder("");
+        for (BuildingTypesEnum enums : BuildingTypesEnum.values()){
+            if (types.contains(enums.toString())){
+                if (type.length()>0){
+                    type.append(","+enums.getValue());
+                }
+                else {
+                    type.append(enums.getValue());
+                }
+
+            }
+        }
+        return type.toString();
     }
 }

@@ -87,19 +87,16 @@ public class BuildingService implements IBuildingService{
 			return new BuildingDTO();
 		}
 		else {
-
 		BuildingEntity buildingEntity = buildingConverter.covertToEntity(buildingDTO);
 		BuildingEntity buildingEntityInDB = buildingRepository.findById(buildingDTO.getId());
-
 		buildingEntity.setCreatedDate(buildingEntityInDB.getCreatedDate());
 		buildingEntity.setCreatedBy(buildingEntityInDB.getCreatedBy());
 		buildingEntity.setModifiedDate(new Date());
 		buildingEntity.setModifiedBy("abc");
-
+		rentAreaService.updateAll(buildingDTO.getId(),buildingDTO.getAreaRent());
 		buildingRepository.update(buildingEntity);
 		return findById(buildingDTO.getId());
 		}
-
 	}
 
 	@Override

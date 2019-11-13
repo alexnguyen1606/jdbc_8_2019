@@ -56,6 +56,7 @@ public class BuildingDTO extends BaseDTO{
 
 	private String type;
 	private String[] buildingTypes = new String[]{};
+	private String typeInView;
 	private String areaRent;
 	private String rentAreaFrom;
 	private String rentAreaTo;
@@ -63,6 +64,14 @@ public class BuildingDTO extends BaseDTO{
 	private String costRentTo;
     private String staffId;
 	private String address;
+
+	public String getTypeInView() {
+		return typeInView;
+	}
+
+	public void setTypeInView(String typeInView) {
+		this.typeInView = typeInView;
+	}
 
 	public String getAddress() {
 		return address;

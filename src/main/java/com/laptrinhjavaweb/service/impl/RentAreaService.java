@@ -88,21 +88,39 @@ public class RentAreaService implements IRentAreaService {
 
     @Override
     public void updateAll(Long buildingId, String areaRent) {
-        List<RentAreaDTO> rentAreas = findByBuildingId(buildingId);
-        String[] areaRentValues = areaRent.trim().split(",");
-        List<Integer> listAreaRent = new ArrayList<>();
-        for (String value : areaRentValues){
-            try {
-                listAreaRent.add(Integer.parseInt(value));
-            }catch (Exception e){
-                System.out.println(e.toString());
+        String[] listValueString = areaRent.trim().split(",");
+        for (String value : listValueString){
+            //int valueInt = Integer.parseInt(value);
+
+            if (findByBuildingIdAndValue(buildingId,Integer.parseInt(value))==null){
+                RentAreaDTO rentAreaDTO = new RentAreaDTO();
+                rentAreaDTO.setBuildingId(buildingId);
+                rentAreaDTO.setValue(Integer.parseInt(value));
+                save(rentAreaDTO);
+            }else{
+                List<RentAreaDTO> rentAreaInDB = findByBuildingId(buildingId);
+                for (RentAreaDTO item : rentAreaInDB){
+                    if (!areaRent.contains(String.valueOf(item.getValue()))){
+                        deleteOne(item.getId());
+                    }
+                }
+
             }
+
         }
-        for (RentAreaDTO rentAreaDTO : rentAreas){
-            if (!listAreaRent.contains(rentAreaDTO.getValue())){
-                deleteOne(rentAreaDTO.getId());
-            }
-        }
+
+    }
+
+    @Override
+    public RentAreaDTO findByBuildingIdAndValue(Long buildingId, Integer value) {
+        RentAreaBuilder builder = new RentAreaBuilder.Builder()
+                .setBuildingId(buildingId)
+                .setValue(value)
+                .build();
+        Map<String,Object> properties = convertToMapProperties(builder);
+        List<RentAreaDTO> rentAreas = rentAreaRepository.findByBuildingIdAndValue(properties)
+                .stream().map(item-> converter.convertToDTO(item)).collect(Collectors.toList());
+        return rentAreas.size()>0 ? rentAreas.get(0) : null ;
     }
 
     @Override
@@ -123,9 +141,8 @@ public class RentAreaService implements IRentAreaService {
         Field[] fields = rentAreaBuilder.getClass().getDeclaredFields();
         try {
         for (Field field : fields){
-            if (field.getName().equals("buildingId")){
+            if (field.getName().equals("buildingId")|| field.getName().equals("value")){
                 field.setAccessible(true);
-
                     properties.put(field.getName().toLowerCase(),field.get(rentAreaBuilder));
                 }
             }

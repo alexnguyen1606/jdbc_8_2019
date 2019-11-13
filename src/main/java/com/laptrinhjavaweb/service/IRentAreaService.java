@@ -13,4 +13,5 @@ public interface IRentAreaService {
     String getAllAreaRentByBuildingId(Long buildingId);
     void saveAll(Long buildingId,String areaRent);
     void updateAll(Long buildingId,String areaRent);
+    RentAreaDTO findByBuildingIdAndValue(Long buildingId,Integer value);
 }

@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 import com.laptrinhjavaweb.utils.FormUtil;
 import com.laptrinhjavaweb.utils.HttpUtil;
@@ -33,12 +34,15 @@ public class UserApi extends HttpServlet {
         ObjectMapper objectMapper = new ObjectMapper();
         request.setCharacterEncoding("UTF-8");
         response.setContentType("application/json");
-      // BuildingDTO buildingDTO = HttpUtil.of(request.getReader()).toModel(BuildingDTO.class);
-
         BuildingDTO buildingDTO = FormUtil.toModel(BuildingDTO.class,request);
+
         IUserService userService = new UserService();
-        objectMapper.writeValue(response.getOutputStream(),
-                userService.findByStatusAndRoleIdAndBuildingId(SystemContant.USER_ENABLE,SystemContant.USER_ROLE,buildingDTO.getId()));
+        if (buildingDTO.getType()!=null && buildingDTO.getType().equals("SHOW_STAFF")){
+            List<UserDTO> users =
+                    userService.findByStatusAndRoleIdAndBuildingId(SystemContant.USER_ENABLE,SystemContant.USER_ROLE,buildingDTO.getId());
+            objectMapper.writeValue(response.getOutputStream(), users);
+        }
+
     }
 }
 

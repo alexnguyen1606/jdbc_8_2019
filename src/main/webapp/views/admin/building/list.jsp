@@ -152,8 +152,8 @@
                 <th>Tên quản lý</th>
                 <th>D.T Sàn</th>
                 <th>Giá thuê</th>
-                <th>Loại tòa nhà</th>
                 <th>Diện tích thuê</th>
+                <th>Loại tòa nhà</th>
                 <th>Điện thoại quản lý</th>
                 <th>Thao tác</th>
                 </thead>
@@ -167,7 +167,7 @@
                         <td>${item.buildingArea}</td>
                         <td>${item.costRent}</td>
                         <td>${item.areaRent}</td>
-                        <td>${item.type}</td>
+                        <td>${item.typeInView}</td>
                         <td>${item.managerPhone}</td>
                         <td>
                             <button class="btn btn-primary" onclick="assignmentBuilding(${item.id})" data-toggle="tooltip"

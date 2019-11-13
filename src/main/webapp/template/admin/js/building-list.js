@@ -75,7 +75,7 @@ $('#btnSearchBuilding').click(function (e) {
 function findUser(data){
     $.ajax({
         type: "GET",
-        url: "http://localhost:8080/api-user"+"?id="+data,
+        url: "http://localhost:8080/api-user?type=SHOW_STAFF"+"&id="+data,
         //data: data,
         dataType: "json",
         contentType:"application/json",

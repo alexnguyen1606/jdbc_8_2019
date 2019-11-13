@@ -44,7 +44,6 @@
 
             <b class="arrow"></b>
         </li>
-
         <li class="">
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon fa fa-desktop"></i>
@@ -62,6 +61,50 @@
                     <a href="/admin-building?action=LIST" >
                         <i class="menu-icon fa fa-caret-right"></i>
                         Danh sách tòa nhà
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+        <li class="">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-users"></i>
+                <span class="menu-text">
+								Quản lý tài khoản
+							</span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li class="">
+                    <a href="#" >
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Danh sách tài khoản
+                    </a>
+                </li>
+
+            </ul>
+        </li>
+        <li class="">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-user"></i>
+                <span class="menu-text">
+								Quản lý khách hàng
+							</span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li class="">
+                    <a href="/admin-customer?action=LIST" >
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Danh sách khách hàng
                     </a>
                 </li>
 

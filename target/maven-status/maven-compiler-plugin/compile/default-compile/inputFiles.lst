@@ -4,11 +4,13 @@ D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\DTO\BaseDTO.j
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\impl\BuildingService.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\impl\CustomerService.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\ICustomerRepository.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\enums\BuildingTypesEnum.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\impl\UserService.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\DTO\AssignmentStaffDTO.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\converter\RentAreaConverter.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\IUserRepository.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\api\CustomerApi.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\controller\CustomerController.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\converter\CustomerConverter.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\builder\CustomerSearchBuilder.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\DTO\RentAreaDTO.java
@@ -36,8 +38,10 @@ D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\entity\Assign
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\impl\CustomerRepository.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\impl\EntityManagerFactory.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\IAssignmentStaffService.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\contant\SystemContant.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\IRentAreaService.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\DTO\UserDTO.java
+D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\enums\DistrictsEnum.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\api\BuildingApi.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\service\impl\AssignmentStaffService.java
 D:\JavaWeb\workspace\jdbc_8_2019\src\main\java\com\laptrinhjavaweb\repository\IAssignmentStaffRepository.java

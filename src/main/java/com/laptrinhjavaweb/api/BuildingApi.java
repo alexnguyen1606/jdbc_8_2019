@@ -67,7 +67,7 @@ public class BuildingApi extends HttpServlet {
         BuildingDTO buildingDTO = HttpUtil.of(request.getReader()).toModel(BuildingDTO.class);
         IBuildingService buildingService = new BuildingService();
         buildingService.delete(buildingDTO.getIdDelete());
-       // objectMapper.writeValue(response.getOutputStream(),buildingService.findAll()));
+        objectMapper.writeValue(response.getOutputStream(),buildingService.findAll());
     }
 
 

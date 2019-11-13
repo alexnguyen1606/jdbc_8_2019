@@ -3,6 +3,7 @@ package com.laptrinhjavaweb.api;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.laptrinhjavaweb.DTO.BuildingDTO;
 import com.laptrinhjavaweb.DTO.UserDTO;
+import com.laptrinhjavaweb.contant.SystemContant;
 import com.laptrinhjavaweb.service.IUserService;
 import com.laptrinhjavaweb.service.impl.UserService;
 
@@ -33,10 +34,11 @@ public class UserApi extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("application/json");
       // BuildingDTO buildingDTO = HttpUtil.of(request.getReader()).toModel(BuildingDTO.class);
+
         BuildingDTO buildingDTO = FormUtil.toModel(BuildingDTO.class,request);
         IUserService userService = new UserService();
         objectMapper.writeValue(response.getOutputStream(),
-                userService.findByStatusAndRoleIdAndBuildingId(1,2,buildingDTO.getId()));
+                userService.findByStatusAndRoleIdAndBuildingId(SystemContant.USER_ENABLE,SystemContant.USER_ROLE,buildingDTO.getId()));
     }
 }
 

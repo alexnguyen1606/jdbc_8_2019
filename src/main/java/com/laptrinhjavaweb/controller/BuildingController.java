@@ -2,6 +2,9 @@ package com.laptrinhjavaweb.controller;
 
 import com.laptrinhjavaweb.DTO.BuildingDTO;
 import com.laptrinhjavaweb.builder.BuildingSearchBuilder;
+import com.laptrinhjavaweb.contant.SystemContant;
+import com.laptrinhjavaweb.enums.BuildingTypesEnum;
+import com.laptrinhjavaweb.enums.DistrictsEnum;
 import com.laptrinhjavaweb.paging.PageRequest;
 import com.laptrinhjavaweb.paging.Pageable;
 import com.laptrinhjavaweb.service.IBuildingService;
@@ -18,7 +21,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @WebServlet(urlPatterns = {"/admin-building"})
 public class BuildingController extends HttpServlet {
@@ -34,6 +39,10 @@ public class BuildingController extends HttpServlet {
         String action = request.getParameter("action");
         BuildingDTO buildingDTO = FormUtil.toModel(BuildingDTO.class,request);
         String url = "";
+
+        buildingService.setType(buildingDTO);
+        request.setAttribute("districts",buildingService.getDistricts());
+        request.setAttribute("buildingTypes",buildingService.getBuildingTypes());
         if (action!=null && action.equals("LIST")){
             url = "/views/admin/building/list.jsp";
             BuildingSearchBuilder builder = new BuildingSearchBuilder.Builder()
@@ -51,16 +60,23 @@ public class BuildingController extends HttpServlet {
                     .build();
             Pageable pageable =new PageRequest(null,null);
             List<BuildingDTO> buildings = buildingService.findAll(builder,pageable);
-            request.setAttribute("users",userService.findByStatusAndRole(1,2));
+            //request.setAttribute("districts",districts);
+            request.setAttribute("users",userService.findByStatusAndRole(SystemContant.USER_ENABLE,SystemContant.USER_ROLE));
             request.setAttribute("buildings",buildings);
+            request.setAttribute("model",buildingDTO);
             RequestDispatcher requestDispatcher = request.getRequestDispatcher(url);
             requestDispatcher.forward(request,response);
         }
         else if (action!=null && action.equals("EDIT")){
             url = "/views/admin/building/edit.jsp";
+            if (buildingDTO.getId()!=null){
+                request.setAttribute("model",buildingService.findById(buildingDTO.getId()));
+            }
+
             RequestDispatcher requestDispatcher = request.getRequestDispatcher(url);
             requestDispatcher.forward(request,response);
         }
+
     }
 
 	

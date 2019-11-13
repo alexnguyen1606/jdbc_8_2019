@@ -9,11 +9,12 @@ import com.laptrinhjavaweb.DTO.RentAreaDTO;
 import com.laptrinhjavaweb.builder.BuildingSearchBuilder;
 import com.laptrinhjavaweb.converter.BuildingConverter;
 import com.laptrinhjavaweb.entity.BuildingEntity;
+import com.laptrinhjavaweb.enums.BuildingTypesEnum;
+import com.laptrinhjavaweb.enums.DistrictsEnum;
 import com.laptrinhjavaweb.paging.Pageable;
 import com.laptrinhjavaweb.repository.impl.BuildingRepository;
 
 import com.laptrinhjavaweb.service.IBuildingService;
-import com.laptrinhjavaweb.service.IRentAreaService;
 import org.apache.commons.lang3.StringUtils;
 
 
@@ -61,7 +62,7 @@ public class BuildingService implements IBuildingService{
             entity.setCreatedBy("abc");
             Long id = buildingRepository.save(entity);
 			rentAreaService.saveAll(id,buildingDTO.getAreaRent());
-            return findOne(id);
+            return findById(id);
         }
 		else {
 		    return new BuildingDTO();
@@ -69,13 +70,14 @@ public class BuildingService implements IBuildingService{
 	}
 
 	@Override
-	public BuildingDTO findOne(Long id) {
+	public BuildingDTO findById(Long id) {
 		if (id == null || buildingRepository.findById(id)== null){
 			return new BuildingDTO();
 		}
 		else
 		{
-		return buildingConverter.covertToDTO(buildingRepository.findById(id));
+		BuildingDTO buildingDTO =buildingConverter.covertToDTO(buildingRepository.findById(id));
+		return buildingDTO;
 		}
 	}
 
@@ -95,7 +97,7 @@ public class BuildingService implements IBuildingService{
 		buildingEntity.setModifiedBy("abc");
 
 		buildingRepository.update(buildingEntity);
-		return findOne(buildingDTO.getId());
+		return findById(buildingDTO.getId());
 		}
 
 	}
@@ -109,6 +111,32 @@ public class BuildingService implements IBuildingService{
 				buildingRepository.deleteById(id);
 			}
 		}
+	}
+
+	@Override
+	public Map<String, String> getBuildingTypes() {
+		Map<String,String> buildingTypes = new HashMap<>();
+		StringBuilder type = new StringBuilder("");
+		for(BuildingTypesEnum item : BuildingTypesEnum.values()){
+			buildingTypes.put(item.toString(),item.getValue());
+		}
+		return buildingTypes;
+	}
+
+	@Override
+	public Map<String, String> getDistricts() {
+		Map<String,String> districts = new HashMap<>();
+		for(DistrictsEnum item : DistrictsEnum.values()){
+			districts.put(item.name(),item.getValue());
+		}
+		return districts;
+	}
+
+	@Override
+	public void setType(BuildingDTO buildingDTO) {
+		StringBuilder type = new StringBuilder("");
+		type.append(String.join(",",buildingDTO.getBuildingTypes()));
+		buildingDTO.setType(type.toString());
 	}
 
 	private Map<String,Object> convertToMapProperties(BuildingSearchBuilder fieldSearch) {

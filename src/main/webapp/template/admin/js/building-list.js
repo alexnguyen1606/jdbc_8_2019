@@ -1,5 +1,4 @@
 function assignmentBuilding(buildingId){
-
     var x ={};
     x['id'] = buildingId;
     findUser(buildingId);
@@ -30,21 +29,25 @@ function assignStaff(data){
         dataType: "json",
         contentType:"application/json",
         success: function (response) {
-            console.log("success");
+           // alert("Giao tòa nhà thành công");
         },error: function(response){
             console.log("fail");
+           // alert("Giao tòa nhà không thành công");
         }
     });
 }
+
 $('#btnDeleteBuilding').click(function (e) {
     e.preventDefault();
-    var data  = {};
-    var buildingIds = $('#buildingList').find('tbody input[type=checkbox]:checked').map(function(){
-        return $(this).val();
-    }).get();
-    data['idDelete'] = buildingIds;
-    deleteBuilding(data);
-    location.reload(true);
+    if (confirm("Bạn có muỗn xóa sản phẩm không")){
+        var data  = {};
+        var buildingIds = $('#buildingList').find('tbody input[type=checkbox]:checked').map(function(){
+            return $(this).val();
+        }).get();
+        data['idDelete'] = buildingIds;
+        deleteBuilding(data);
+    }
+
 });
 function deleteBuilding(data){
     $.ajax({
@@ -54,12 +57,17 @@ function deleteBuilding(data){
         dataType: "json",
         contentType:"application/json",
         success: function (response) {
+            alert("Delete Success")
             console.log("success");
+            window.location.href="http://localhost:8080/admin-building?action=LIST";
         },error: function(response){
             console.log("fail");
+            alert("Delete fail");
+            window.location.href="http://localhost:8080/admin-building?action=LIST";
         }
     });
 }
+
 $('#btnSearchBuilding').click(function (e) {
     e.preventDefault();
     $('#formSearchBuilding').submit();

@@ -16,6 +16,7 @@ com\laptrinhjavaweb\mapper\ResultSetMapper$ColumnModel.class
 com\laptrinhjavaweb\builder\UserBuilder.class
 com\laptrinhjavaweb\repository\impl\EntityManagerFactory.class
 com\laptrinhjavaweb\repository\IRentAreaRepository.class
+com\laptrinhjavaweb\controller\CustomerController.class
 com\laptrinhjavaweb\annotation\Table.class
 com\laptrinhjavaweb\builder\AssigmentStaffBuilder$Builder.class
 com\laptrinhjavaweb\builder\RentAreaBuilder.class
@@ -27,6 +28,7 @@ com\laptrinhjavaweb\converter\UserConverter.class
 com\laptrinhjavaweb\api\BuildingApi.class
 com\laptrinhjavaweb\builder\BuildingSearchBuilder$Builder.class
 com\laptrinhjavaweb\entity\AssignmentStaffEntity.class
+com\laptrinhjavaweb\enums\DistrictsEnum.class
 com\laptrinhjavaweb\service\impl\BuildingService.class
 com\laptrinhjavaweb\repository\IAssignmentStaffRepository.class
 com\laptrinhjavaweb\api\AssignmentStaffApi.class
@@ -38,6 +40,7 @@ com\laptrinhjavaweb\builder\UserBuilder$Builder.class
 com\laptrinhjavaweb\paging\PageRequest.class
 com\laptrinhjavaweb\repository\ICustomerRepository.class
 com\laptrinhjavaweb\builder\AssigmentStaffBuilder$1.class
+com\laptrinhjavaweb\contant\SystemContant.class
 com\laptrinhjavaweb\builder\AssigmentStaffBuilder.class
 com\laptrinhjavaweb\service\ICustomerService.class
 com\laptrinhjavaweb\repository\impl\AssignmentStaffRepository.class
@@ -67,6 +70,7 @@ com\laptrinhjavaweb\builder\CustomerSearchBuilder.class
 com\laptrinhjavaweb\service\IBuildingService.class
 com\laptrinhjavaweb\annotation\Column.class
 com\laptrinhjavaweb\mapper\ResultSetMapper.class
+com\laptrinhjavaweb\enums\BuildingTypesEnum.class
 com\laptrinhjavaweb\DTO\RentAreaDTO.class
 com\laptrinhjavaweb\entity\UserEntity.class
 com\laptrinhjavaweb\converter\AssignmentStaffConverter.class

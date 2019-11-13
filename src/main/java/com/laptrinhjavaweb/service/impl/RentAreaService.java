@@ -10,9 +10,8 @@ import com.laptrinhjavaweb.repository.impl.RentAreaRepository;
 import com.laptrinhjavaweb.service.IRentAreaService;
 
 import java.lang.reflect.Field;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class RentAreaService implements IRentAreaService {
     private IRentAreaRepository rentAreaRepository;
@@ -53,6 +52,23 @@ public class RentAreaService implements IRentAreaService {
         rentAreaRepository.deleteByBuildingId(properties);
     }
 
+    @Override
+    public void deleteOne(Long id) {
+        if (id!=null){
+            rentAreaRepository.deleteById(id);
+        }
+    }
+
+    @Override
+    public List<RentAreaDTO> findByBuildingId(Long buildingId) {
+        RentAreaBuilder builder = new RentAreaBuilder.Builder()
+                .setBuildingId(buildingId)
+                .build();
+        Map<String,Object> properties = convertToMapProperties(builder);
+        return rentAreaRepository.finAll(properties).stream()
+                .map(item -> converter.convertToDTO(item)).collect(Collectors.toList());
+    }
+    @Override
     public void saveAll(Long buildingId,String areaRent){
         String[] listAreaRent = areaRent.trim().split(",");
         for (String value : listAreaRent){
@@ -68,6 +84,39 @@ public class RentAreaService implements IRentAreaService {
             }
 
         }
+    }
+
+    @Override
+    public void updateAll(Long buildingId, String areaRent) {
+        List<RentAreaDTO> rentAreas = findByBuildingId(buildingId);
+        String[] areaRentValues = areaRent.trim().split(",");
+        List<Integer> listAreaRent = new ArrayList<>();
+        for (String value : areaRentValues){
+            try {
+                listAreaRent.add(Integer.parseInt(value));
+            }catch (Exception e){
+                System.out.println(e.toString());
+            }
+        }
+        for (RentAreaDTO rentAreaDTO : rentAreas){
+            if (!listAreaRent.contains(rentAreaDTO.getValue())){
+                deleteOne(rentAreaDTO.getId());
+            }
+        }
+    }
+
+    @Override
+    public String getAllAreaRentByBuildingId(Long buildingId){
+        List<RentAreaDTO> listRentArea = findByBuildingId(buildingId);
+        StringBuilder rentArea = new StringBuilder("");
+        for (RentAreaDTO rentAreaDTO : listRentArea){
+            if (rentArea.length()>0){
+                rentArea.append(","+rentAreaDTO.getValue());
+            }else {
+                rentArea.append(rentAreaDTO.getValue());
+            }
+        }
+        return rentArea.toString();
     }
     private Map<String,Object> convertToMapProperties(RentAreaBuilder rentAreaBuilder){
         Map<String,Object> properties = new HashMap<>();

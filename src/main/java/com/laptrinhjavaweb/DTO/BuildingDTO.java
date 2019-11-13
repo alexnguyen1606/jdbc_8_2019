@@ -62,9 +62,17 @@ public class BuildingDTO extends BaseDTO{
 	private String costRentFrom;
 	private String costRentTo;
     private String staffId;
+	private String address;
 
+	public String getAddress() {
+		return address;
+	}
 
-    public String getStaffId() {
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getStaffId() {
         return staffId;
     }
 

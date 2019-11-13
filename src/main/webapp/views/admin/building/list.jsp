@@ -1,4 +1,5 @@
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@include file="/common/taglib.jsp" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%--
   Created by IntelliJ IDEA.
   User: User
@@ -7,11 +8,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="/common/taglib.jsp" %>
 <c:url var="buildingURL" value="/admin-building"/>
 <html>
 <head>
-    <title>Title</title>
+    <title>Danh sách tòa nhà</title>
 </head>
 <body>
 <div class="breadcrumbs" id="breadcrumbs">
@@ -22,7 +22,7 @@
     <ul class="breadcrumb">
         <li>
             <i class="ace-icon fa fa-home home-icon"></i>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
         </li>
         <li class="active">Dashboard</li>
     </ul><!-- /.breadcrumb -->
@@ -57,71 +57,71 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <label for="name">Tên sản phẩm</label>
-                                    <input class="form-control" name="name" id="name" placeholder="">
+                                    <input class="form-control" name="name" id="name" value="${model.name}" placeholder="">
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="buildingArea">Diện tích sàn</label>
-                                    <input class="form-control" name="buildingArea" id="buildingArea" placeholder="">
+                                    <input class="form-control" name="buildingArea" id="buildingArea" value="${model.buildingArea}" >
                                 </div>
                                 <div class="col-sm-4">
                                     <label for="district">Quận hiện có</label>
                                     <select id="district" name="district" class="form-control">
                                         <option value="">Chọn quận</option>
-                                        <option value="QUAN_1">Quận 1</option>
-                                        <option value="QUAN_7">Quận 7</option>
-                                        <option value="QUAN_2">Quận 2</option>
-
+                                        <c:forEach var="item" items="${districts}">
+                                            <option value="${item.key}" ${item.key == model.district ? "selected":""} >${item.value}</option>
+                                        </c:forEach>
                                     </select>
                                 </div>
                                 <div class="col-sm-4">
                                     <label for="ward">Phường</label>
-                                    <input class="form-control" name="ward" id="ward" placeholder="">
+                                    <input class="form-control" name="ward" id="ward" value="${model.ward}">
                                 </div>
                                 <div class="col-sm-4">
                                     <label for="street">Đường</label>
-                                    <input class="form-control" name="street" id="street" placeholder="">
+                                    <input class="form-control" name="street" id="street" value="${model.street}">
                                 </div>
                                 <div class="col-sm-4">
                                     <label for="numberOfBasement">Số tầng hầm</label>
-                                    <input type="number" class="form-control" name="numberOfBasement" id="numberOfBasement" placeholder="">
+                                    <input type="number" class="form-control" name="numberOfBasement" id="numberOfBasement" value="${model.numberOfBasement}">
                                 </div>
                                 <div class="col-sm-4">
                                     <label for="rentAreaFrom">Diện tích thuê từ</label>
-                                    <input type="number" class="form-control" name="rentAreaFrom" id="rentAreaFrom" placeholder="">
+                                    <input type="number" class="form-control" name="rentAreaFrom" id="rentAreaFrom" value="${model.rentAreaFrom}">
                                 </div>
                                 <div class="col-sm-4">
                                     <label for="rentAreaTo">Diện tích thuê đến đến</label>
-                                    <input type="number" class="form-control" name="rentAreaTo" id="rentAreaTo" placeholder="">
+                                    <input type="number" class="form-control" name="rentAreaTo" id="rentAreaTo" value="${model.rentAreaTo}">
                                 </div>
                                 <div class="col-sm-4">
                                     <label for="costRentFrom">Giá thuê từ</label>
-                                    <input type="number" class="form-control" name="costRentFrom" id="costRentFrom" placeholder="">
+                                    <input type="number" class="form-control" name="costRentFrom" id="costRentFrom" value="${model.costRentFrom}">
                                 </div>
                                 <div class="col-sm-4">
                                     <label for="costRentTo">Giá thuê đến</label>
-                                    <input type="number" class="form-control" name="costRentTo" id="costRentTo" placeholder="">
+                                    <input type="number" class="form-control" name="costRentTo" id="costRentTo" value="${model.costRentTo}">
                                 </div>
                                 <div class="col-sm-4">
                                     <label for="managerName">Tên quản lý</label>
-                                    <input class="form-control" name="managerName" id="managerName" placeholder="">
+                                    <input class="form-control" name="managerName" id="managerName" value="${model.managerName}">
                                 </div>
                                 <div class="col-sm-4">
                                     <label for="managerPhone">Điện thoại quản lý</label>
-                                    <input class="form-control" name="managerPhone" id="managerPhone" placeholder="">
+                                    <input class="form-control" name="managerPhone" id="managerPhone" value="${model.managerPhone}">
                                 </div>
                                 <div class="col-sm-4">
                                     <label for="staffId">Chọn nhân viên phụ trách</label>
                                     <select id="staffId" name="staffId" class="form-control">
                                         <option value="">Chọn nhân viên</option>
                                         <c:forEach var="item" items="${users}">
-                                            <option value="${item.id}">${item.fullName}</option>
+                                            <option value="${item.id}" ${item.id==model.staffId ? "selected" : ""}>${item.fullName}</option>
                                         </c:forEach>
                                     </select>
                                 </div>
-                                <div class="col-sm-5">
-                                    <label class="checkbox-inline"><input type="checkbox" id="buildingTypes" name="buildingTypes" value="TANG_TRET">Tầng trệt</label>
-                                    <label class="checkbox-inline"><input type="checkbox" id="buildingTypes" name="buildingTypes" value="NGUYEN_CAN">Nguyên căn</label>
-                                        <label class="checkbox-inline"><input type="checkbox" id="buildingTypes" name="buildingTypes" value="NOI_THAT">Nội thất</label>
+
+                                <div class="col-sm-12">
+                                    <c:forEach items="${buildingTypes}" var="item">
+                                        <label class="checkbox-inline"><input type="checkbox" id="buildingTypes" name="buildingTypes" ${fn:contains(model.type,item.key) ? "checked" :""}  value="${item.key}">${item.value}</label>
+                                    </c:forEach>
                                 </div>
                             </div>
                             <br>
@@ -140,39 +140,43 @@
         <div class="col-sm-12">
             <div class="pull-right">
                 <a href="/admin-building?action=EDIT" class="btn btn-primary " data-toggle="tooltip" title="Thêm sản phầm"><i class="fa fa-plus"></i></a>
-                <button class="btn btn-danger " id="btnDeleteBuilding" data-toggle="tooltip" title="Xóa sản phẩm"><i class="fa fa-trash" ></i></button>
+                <button class="btn btn-danger "  id="btnDeleteBuilding" data-toggle="tooltip" title="Xóa sản phẩm"><i class="fa fa-trash" ></i></button>
             </div>
         </div>
         <div class="col-sm-12">
             <table class="table table-striped table-hover" id="buildingList">
                 <thead>
                 <th></th>
-                <th>Ngày</th>
                 <th>Tên sản phẩm</th>
                 <th>Địa chỉ</th>
                 <th>Tên quản lý</th>
                 <th>D.T Sàn</th>
                 <th>Giá thuê</th>
-                <th>Phí dịch vụ</th>
+                <th>Loại tòa nhà</th>
+                <th>Diện tích thuê</th>
                 <th>Điện thoại quản lý</th>
                 <th>Thao tác</th>
                 </thead>
-                <tbody>
+                <tbody id="bodyBuildingList">
                 <c:forEach items="${buildings}" var="item">
                     <tr>
                         <td><input type="checkbox" value="${item.id}" id="checkbox_${item.id}"></td>
-                        <td> <fmt:formatDate value="${item.createdDate}" type="date" pattern="dd-MM-yyyy"/> </td>
                         <td>${item.name}</td>
-                        <td>89 Cao Thăng</td>
+                        <td>${item.address}</td>
                         <td>${item.managerName}</td>
                         <td>${item.buildingArea}</td>
                         <td>${item.costRent}</td>
-                        <td>${item.serviceCost}</td>
+                        <td>${item.areaRent}</td>
+                        <td>${item.type}</td>
                         <td>${item.managerPhone}</td>
                         <td>
                             <button class="btn btn-primary" onclick="assignmentBuilding(${item.id})" data-toggle="tooltip"
                                     title="Giao tòa nhà ">
                                 <i class="fa fa-bars"></i></button>
+                            <a href="${buildingURL}?action=EDIT&id=${item.id}" class="btn btn-success"  data-toggle="tooltip"
+                                title="Chỉnh sửa tòa nhà ">
+                                <i class="fa fa-pencil"></i>
+                            </a>    
                         </td>
                     </tr>
                 </c:forEach>

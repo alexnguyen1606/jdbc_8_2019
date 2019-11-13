@@ -1,3 +1,5 @@
+<%@ taglib prefix="dec" uri="http://www.opensymphony.com/sitemesh/decorator" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%--
   Created by IntelliJ IDEA.
@@ -6,13 +8,13 @@
   Time: 9:46 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="dec" uri="http://www.opensymphony.com/sitemesh/decorator" %>
 <jsp:include page="/common/taglib.jsp"></jsp:include>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+
 <html>
 <head>
-    <title>Title</title>
+    <title><dec:title default="Trang chủ"></dec:title></title>
     <link rel="stylesheet" href="<c:url value='/template/admin/assets/css/bootstrap.min.css' />" />
     <link rel="stylesheet" href="<c:url value='/template/admin/assets/font-awesome/4.2.0/css/font-awesome.min.css' />" />
 
@@ -24,7 +26,7 @@
 
     <!-- ace settings handler -->
     <script src="<c:url value='/template/admin/assets/js/ace-extra.min.js' />"></script>
-    <%--<link rel="stylesheet" href="<c:url value='https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css'/> ">--%>
+
 </head>
 
 <body class="no-skin">

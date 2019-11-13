@@ -1,3 +1,5 @@
+<%@include file="/common/taglib.jsp" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: User
@@ -8,7 +10,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Danh sách tòa nhà</title>
 </head>
 <body>
 <div class="breadcrumbs" id="breadcrumbs">
@@ -19,7 +21,7 @@
     <ul class="breadcrumb">
         <li>
             <i class="ace-icon fa fa-home home-icon"></i>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
         </li>
         <li class="active">Dashboard</li>
     </ul><!-- /.breadcrumb -->
@@ -43,19 +45,19 @@
 <div class="row">
     <div class="col-sm-12">
         <form class="form-horizontal" role="form" id="formEdit">
-            <input type="hidden" id="id" name="id" value="">
+            <input type="hidden" id="id" name="id" value="${model.id}">
             <div class="form-group">
                 <label class="col-sm-3 control-label no-padding-right" for="name">Tên sản phẩm </label>
 
                 <div class="col-sm-9">
-                    <input type="text" id="name" name="name" placeholder="" class="col-xs-10 col-sm-5" />
+                    <input type="text" id="name" name="name" value="${model.name}" placeholder="" class="col-xs-10 col-sm-5" />
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-3 control-label no-padding-right" for="buildingArea">Diện tích sàn </label>
 
                 <div class="col-sm-9">
-                    <input type="number" id="buildingArea" name="buildingArea" placeholder="" class="col-xs-10 col-sm-5" />
+                    <input type="number" id="buildingArea" name="buildingArea" value="${model.buildingArea}" placeholder="" class="col-xs-10 col-sm-5" />
                 </div>
             </div>
             <div class="form-group">
@@ -63,8 +65,10 @@
 
                 <div class="col-sm-3">
                     <select class="form-control" name="district" id="district">
-                        <option value="QUAN_1">Quận 1</option>
-                        <option value="QUAN_7">Quận 7</option>
+                        <option value="">Chọn quận</option>
+                        <c:forEach var="item" items="${districts}">
+                            <option value="${item.key}" ${item.key == model.district ? "selected":""}>${item.value}</option>
+                        </c:forEach>
                     </select>
                 </div>
             </div>
@@ -72,65 +76,66 @@
                 <label class="col-sm-3 control-label no-padding-right" for="ward">Phường </label>
 
                 <div class="col-sm-9">
-                    <input type="text" id="ward" name="ward" placeholder="" class="col-xs-10 col-sm-5" />
+                    <input type="text" id="ward" name="ward" value="${model.ward}" placeholder="" class="col-xs-10 col-sm-5" />
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-3 control-label no-padding-right" for="street">Đường</label>
 
                 <div class="col-sm-9">
-                    <input type="text" id="street" name="street" placeholder="" class="col-xs-10 col-sm-5" />
+                    <input type="text" id="street" name="street" value="${model.street}" placeholder="" class="col-xs-10 col-sm-5" />
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-3 control-label no-padding-right" for="areaRent">Diện tích thuê</label>
 
                 <div class="col-sm-9">
-                    <input type="text" id="areaRent" name="areaRent" placeholder="" class="col-xs-10 col-sm-5" />
+                    <input type="text" id="areaRent" name="areaRent" value="${model.areaRent}" placeholder="" class="col-xs-10 col-sm-5" />
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-3 control-label no-padding-right" for="buildingTypes">Loại toàn nhà</label>
 
                 <div class="col-sm-9">
-                    <input type="checkbox" id="buildingTypes" name="buildingTypes" value="NGUYEN_CAN" class="" placeholder="" />Nguyên Căn
-                    <input type="checkbox" id="buildingTypes" name="buildingTypes" value="TANG_TRET" placeholder="" class="" />Tầng trệt
-                    <input type="checkbox" id="buildingTypes" name="buildingTypes" value="NOI_THAT" placeholder="" class="" />Nội thất
+                    <c:forEach items="${buildingTypes}" var="item">
+                        <label class="checkbox-inline"><input type="checkbox"
+                                                              id="buildingTypes" name="buildingTypes" ${fn:contains(model.type,item.key) ? "checked" :""}  value="${item.key}">${item.value}</label>
+                    </c:forEach>
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-3 control-label no-padding-right" for="costRent">Giá thuê</label>
 
                 <div class="col-sm-9">
-                    <input type="number" id="costRent" name="costRent" placeholder="" class="col-xs-10 col-sm-5" />
+                    <input type="number" id="costRent" name="costRent" value="${model.costRent}" placeholder="" class="col-xs-10 col-sm-5" />
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-3 control-label no-padding-right" for="serviceCost">Giá dịch vụ</label>
 
                 <div class="col-sm-9">
-                    <input type="number" id="serviceCost" name="serviceCost" placeholder="" class="col-xs-10 col-sm-5" />
+                    <input type="number" id="serviceCost" name="serviceCost" value="${model.serviceCost}" placeholder="" class="col-xs-10 col-sm-5" />
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-3 control-label no-padding-right" for="numberOfBasement">Số tầng hầm</label>
 
                 <div class="col-sm-9">
-                    <input type="number" id="numberOfBasement" name="numberOfBasement" placeholder="" class="col-xs-10 col-sm-5" />
+                    <input type="number" id="numberOfBasement" name="numberOfBasement" value="${model.numberOfBasement}" placeholder="" class="col-xs-10 col-sm-5" />
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-3 control-label no-padding-right" for="managerName">Tên quản lý</label>
 
                 <div class="col-sm-9">
-                    <input type="text" id="managerName" name="managerName" placeholder="" class="col-xs-10 col-sm-5" />
+                    <input type="text" id="managerName" name="managerName" value="${model.managerName}" placeholder="" class="col-xs-10 col-sm-5" />
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-3 control-label no-padding-right" for="managerPhone">Số điện thoại quản lý</label>
 
                 <div class="col-sm-9">
-                    <input type="text" id="managerPhone" name="managerPhone" placeholder="" class="col-xs-10 col-sm-5" />
+                    <input type="text" id="managerPhone" name="managerPhone" value="${model.managerPhone}" placeholder="" class="col-xs-10 col-sm-5" />
                 </div>
             </div>
 

@@ -1,5 +1,6 @@
 package com.laptrinhjavaweb.service;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -13,7 +14,10 @@ public interface IBuildingService {
 	List<BuildingDTO> findAll(Pageable pageable);
 	List<BuildingDTO> findAll();
 	BuildingDTO save(BuildingDTO buildingDTO);
-	BuildingDTO findOne(Long id);
+	BuildingDTO findById(Long id);
 	BuildingDTO update(BuildingDTO buildingDTO);
 	void delete(Long[] ids);
+	Map<String,String> getBuildingTypes();
+	Map<String,String> getDistricts ();
+	void setType(BuildingDTO buildingDTO);
 }

@@ -2,6 +2,11 @@ package com.laptrinhjavaweb.converter;
 
 import com.laptrinhjavaweb.DTO.BuildingDTO;
 import com.laptrinhjavaweb.entity.BuildingEntity;
+import com.laptrinhjavaweb.enums.DistrictsEnum;
+import com.laptrinhjavaweb.service.IBuildingService;
+import com.laptrinhjavaweb.service.IRentAreaService;
+import com.laptrinhjavaweb.service.impl.BuildingService;
+import com.laptrinhjavaweb.service.impl.RentAreaService;
 import org.apache.commons.lang3.StringUtils;
 import org.modelmapper.ModelMapper;
 
@@ -9,10 +14,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BuildingConverter {
+    private IRentAreaService areaService;
+    public BuildingConverter(){
+        areaService = new RentAreaService();
+    }
     public BuildingDTO covertToDTO(BuildingEntity buildingEntity){
         ModelMapper modelMapper = new ModelMapper();
         BuildingDTO dto= modelMapper.map(buildingEntity,BuildingDTO.class);
         dto.setBuildingTypes(convertToBuildingTypes(buildingEntity.getType()));
+        dto.setAreaRent(areaService.getAllAreaRentByBuildingId(dto.getId()));
+        dto.setAddress(getAddress(dto));
         return dto;
     }
     public BuildingEntity covertToEntity(BuildingDTO buildingDTO){
@@ -21,7 +32,18 @@ public class BuildingConverter {
         entity.setType(convertToTypes(buildingDTO.getBuildingTypes()));
         return entity;
     }
-
+    private String getAddress(BuildingDTO dto){
+        StringBuilder address = new StringBuilder(dto.getStreet()+" ,"+dto.getWard());
+        String districtName = "";
+        for(DistrictsEnum item : DistrictsEnum.values()){
+            if (item.toString().equals(dto.getDistrict())){
+                districtName = item.getValue();
+                break;
+            }
+        }
+        address.append(" ,"+districtName);
+        return address.toString();
+    }
     private String[] convertToBuildingTypes(String types){
         if (StringUtils.isNotBlank(types)){
             String[] result = types.trim().split(",");
@@ -35,13 +57,7 @@ public class BuildingConverter {
     private String convertToTypes(String[] buildingTypes){
         StringBuilder result = new StringBuilder("");
         if (buildingTypes.length>0 && buildingTypes!=null){
-            for (String type : buildingTypes){
-                if (result.length()>0 && StringUtils.isNotBlank(type)){
-                    result.append(","+type);
-                }else {
-                    result.append(type);
-                }
-            }
+            result.append(String.join(",",buildingTypes));
         }
         return result.toString();
     }

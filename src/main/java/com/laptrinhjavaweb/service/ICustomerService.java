@@ -7,7 +7,11 @@ import com.laptrinhjavaweb.paging.Pageable;
 import java.util.List;
 
 public interface ICustomerService {
-    public List<CustomerDTO> findAll(Pageable pageable);
-    public List<CustomerDTO> findAll();
-    public List<CustomerDTO> findAll(CustomerSearchBuilder fieldSearch, Pageable pageable);
+     List<CustomerDTO> findAll(Pageable pageable);
+     List<CustomerDTO> findAll();
+     List<CustomerDTO> findAll(CustomerSearchBuilder fieldSearch, Pageable pageable);
+     CustomerDTO findById(Long id);
+     CustomerDTO save(CustomerDTO customerDTO);
+     CustomerDTO update(CustomerDTO customerDTO);
+     void delete(Long[] ids);
 }

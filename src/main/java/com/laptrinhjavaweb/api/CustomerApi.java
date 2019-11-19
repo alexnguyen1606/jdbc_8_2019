@@ -8,12 +8,14 @@ import com.laptrinhjavaweb.paging.Pageable;
 import com.laptrinhjavaweb.service.ICustomerService;
 import com.laptrinhjavaweb.service.impl.CustomerService;
 import com.laptrinhjavaweb.utils.FormUtil;
+import com.laptrinhjavaweb.utils.HttpUtil;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @WebServlet("/api-customer")
@@ -34,7 +36,28 @@ public class CustomerApi extends HttpServlet {
         List<CustomerDTO> customerDTOS = customerService.findAll(customerSearchBuilder,pageable);
         objectMapper.writeValue(response.getOutputStream(),customerDTOS);
     }
-    protected void doPost(HttpServletRequest request,HttpServletResponse response){
-
+    protected void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("application/json");
+        CustomerDTO customerDTO = HttpUtil.of(request.getReader()).toModel(CustomerDTO.class);
+        ICustomerService customerService = new CustomerService();
+        objectMapper.writeValue(response.getOutputStream(),customerService.save(customerDTO));
+    }
+    protected void doPut(HttpServletRequest request,HttpServletResponse response) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("application/json");
+        CustomerDTO customerDTO = HttpUtil.of(request.getReader()).toModel(CustomerDTO.class);
+        ICustomerService customerService = new CustomerService();
+        objectMapper.writeValue(response.getOutputStream(),customerService.update(customerDTO));
+    }
+    protected void doDelete(HttpServletRequest request,HttpServletResponse response) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("application/json");
+        CustomerDTO customerDTO = HttpUtil.of(request.getReader()).toModel(CustomerDTO.class);
+        ICustomerService customerService = new CustomerService();
+        customerService.delete(customerDTO.getIdDelete());
     }
 }

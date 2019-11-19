@@ -30,10 +30,11 @@ public class CustomerController extends HttpServlet {
     protected void doGet (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         String url = "";
+        CustomerDTO customerDTO = FormUtil.toModel(CustomerDTO.class,request);
+        ICustomerService customerService = new CustomerService();
+        Pageable pageable = new PageRequest(1,10);
         if (action.equals("LIST") && action!=null){
-            CustomerDTO customerDTO = FormUtil.toModel(CustomerDTO.class,request);
-            ICustomerService customerService = new CustomerService();
-            Pageable pageable = new PageRequest(1,10);
+
             CustomerSearchBuilder customerSearchBuilder = new CustomerSearchBuilder.Builder()
                     .setEmail(customerDTO.getEmail())
                     .setFullName(customerDTO.getFullName())
@@ -48,8 +49,11 @@ public class CustomerController extends HttpServlet {
             url = "/views/admin/customer/list.jsp";
             RequestDispatcher requestDispatcher = request.getRequestDispatcher(url);
             requestDispatcher.forward(request,response);
-        }else {
-            url = "/views/admin/customer/list.jsp";
+        }else if (action.equals("EDIT") && action!=null){
+            if (customerDTO.getId()!=null){
+                request.setAttribute("model",customerService.findById(customerDTO.getId()));
+            }
+            url = "/views/admin/customer/edit.jsp";
             RequestDispatcher requestDispatcher = request.getRequestDispatcher(url);
             requestDispatcher.forward(request,response);
         }

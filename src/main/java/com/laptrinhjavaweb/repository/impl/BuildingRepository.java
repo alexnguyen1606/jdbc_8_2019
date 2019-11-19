@@ -14,7 +14,7 @@ public class BuildingRepository extends SimpleJpaRepository<BuildingEntity> impl
 
     public List<BuildingEntity> findAll(Map<String,Object> params, Pageable pageable,BuildingSearchBuilder fieldSearch){
     	String sqlSpecial = buildSqlSpecial(fieldSearch);
-		System.out.println(sqlSpecial);
+
 		StringBuilder sqlSearch = new StringBuilder(" Select * from building as A");
 		if ( StringUtils.isNotBlank(fieldSearch.getStaffId())){
 			sqlSearch.append(" INNER JOIN assignmentstaff AS am ON A.id = am.staffid");
@@ -23,7 +23,7 @@ public class BuildingRepository extends SimpleJpaRepository<BuildingEntity> impl
 		sqlSearch=this.createSqlFindAll(sqlSearch,params);
 		sqlSearch.append(sqlSpecial);
 		//System.out.println("sql Special:"+sqlSpecial);
-		System.out.println("Sql search:"+sqlSearch.toString());
+		System.out.println("Sql search:"+sqlSearch.toString()+" end");
         return this.findAll(sqlSearch.toString(),pageable);
     }
 
@@ -79,9 +79,9 @@ public class BuildingRepository extends SimpleJpaRepository<BuildingEntity> impl
 				sql.append(" AND ra.value <= "+fieldSearch.getRentAreaTo()+"");
 			}
 			sql.append("))");
-			if ( StringUtils.isNotBlank(fieldSearch.getStaffId())){
-				sql.append(" AND am.staffid='"+fieldSearch.getStaffId()+"'");
-			}
+		}
+		if ( StringUtils.isNotBlank(fieldSearch.getStaffId())){
+			sql.append(" AND am.staffid='"+fieldSearch.getStaffId()+"'");
 		}
 		return sql.toString();
 	}

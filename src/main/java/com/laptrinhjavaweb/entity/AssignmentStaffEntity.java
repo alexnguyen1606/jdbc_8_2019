@@ -6,7 +6,7 @@ import com.laptrinhjavaweb.annotation.Table;
 
 @Entity
 @Table(name = "assignmentstaff")
-public class AssignmentStaffEntity {
+public class AssignmentStaffEntity extends BaseEntity {
     @Column(name = "id")
     private Long id;
     @Column(name = "buildingid")

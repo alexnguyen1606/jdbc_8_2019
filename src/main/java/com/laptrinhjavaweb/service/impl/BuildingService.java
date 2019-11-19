@@ -71,7 +71,7 @@ public class BuildingService implements IBuildingService{
 
 	@Override
 	public BuildingDTO findById(Long id) {
-		if (id == null || buildingRepository.findById(id)== null){
+		if (id == null){
 			return new BuildingDTO();
 		}
 		else

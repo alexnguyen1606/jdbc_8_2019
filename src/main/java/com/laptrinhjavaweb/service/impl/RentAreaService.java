@@ -8,6 +8,7 @@ import com.laptrinhjavaweb.entity.RentAreaEntity;
 import com.laptrinhjavaweb.repository.IRentAreaRepository;
 import com.laptrinhjavaweb.repository.impl.RentAreaRepository;
 import com.laptrinhjavaweb.service.IRentAreaService;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Field;
 import java.util.*;
@@ -88,27 +89,29 @@ public class RentAreaService implements IRentAreaService {
 
     @Override
     public void updateAll(Long buildingId, String areaRent) {
-        String[] listValueString = areaRent.trim().split(",");
-        for (String value : listValueString){
-            //int valueInt = Integer.parseInt(value);
-
-            if (findByBuildingIdAndValue(buildingId,Integer.parseInt(value))==null){
-                RentAreaDTO rentAreaDTO = new RentAreaDTO();
-                rentAreaDTO.setBuildingId(buildingId);
-                rentAreaDTO.setValue(Integer.parseInt(value));
-                save(rentAreaDTO);
-            }else{
-                List<RentAreaDTO> rentAreaInDB = findByBuildingId(buildingId);
-                for (RentAreaDTO item : rentAreaInDB){
-                    if (!areaRent.contains(String.valueOf(item.getValue()))){
-                        deleteOne(item.getId());
+        if (!areaRent.equals("")){
+            String[] listValueString = areaRent.trim().split(",");
+            for (String value : listValueString){
+                int valueInt = Integer.parseInt(value);
+                if (findByBuildingIdAndValue(buildingId,valueInt)==null){
+                    RentAreaDTO rentAreaDTO = new RentAreaDTO();
+                    rentAreaDTO.setBuildingId(buildingId);
+                    rentAreaDTO.setValue(valueInt);
+                    save(rentAreaDTO);
+                }else{
+                    List<RentAreaDTO> rentAreaInDB = findByBuildingId(buildingId);
+                    for (RentAreaDTO item : rentAreaInDB){
+                        if (!areaRent.contains(String.valueOf(item.getValue()))){
+                            deleteOne(item.getId());
+                        }
                     }
+
                 }
 
             }
-
+        }else{
+            deleteByBuildingId(buildingId);
         }
-
     }
 
     @Override

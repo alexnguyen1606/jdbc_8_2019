@@ -89,7 +89,7 @@
             </div>
             <div class="col-sm-12">
                 <div class="pull-right">
-                    <a href="/admin-building?action=EDIT" class="btn btn-primary " data-toggle="tooltip" title="Thêm khách hàng"><i class="fa fa-plus"></i></a>
+                    <a href="${customerURL}?action=EDIT" class="btn btn-primary " data-toggle="tooltip" title="Thêm khách hàng"><i class="fa fa-plus"></i></a>
                     <button class="btn btn-danger "  id="btnDeleteCustomer" data-toggle="tooltip" title="Xóa khách hàng"><i class="fa fa-trash" ></i></button>
                 </div>
             </div>

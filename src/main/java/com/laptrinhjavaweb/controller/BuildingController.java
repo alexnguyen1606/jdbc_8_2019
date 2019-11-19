@@ -72,7 +72,6 @@ public class BuildingController extends HttpServlet {
             if (buildingDTO.getId()!=null){
                 request.setAttribute("model",buildingService.findById(buildingDTO.getId()));
             }
-
             RequestDispatcher requestDispatcher = request.getRequestDispatcher(url);
             requestDispatcher.forward(request,response);
         }

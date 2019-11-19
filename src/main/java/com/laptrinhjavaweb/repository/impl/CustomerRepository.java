@@ -13,16 +13,22 @@ public class CustomerRepository extends SimpleJpaRepository<CustomerEntity> impl
 
     @Override
     public List<CustomerEntity> findAll(Map<String,Object> properties, Pageable pageable, CustomerSearchBuilder builder) {
-        StringBuilder where = new StringBuilder(" Select * from customer AS A");
+        StringBuilder sql = new StringBuilder(" Select * from customer AS A");
         String sqlSpecial =buildSqlSpecial(builder);
         if (StringUtils.isNotBlank(builder.getUserId())){
-            where.append(" INNER JOIN customerservice as B ON A.id = B.customerid");
+            sql.append(" INNER JOIN customerservice as B ON A.id = B.customerid");
         }
-        where.append(" WHERE 1=1");
-        where = this.createSqlFindAll(where,properties);
-        where.append(sqlSpecial);
-        return this.findAll(where.toString(),pageable);
+        sql.append(" WHERE 1=1");
+        sql = this.createSqlFindAll(sql,properties);
+        sql.append(sqlSpecial);
+        return this.findAll(sql.toString(),pageable);
     }
+
+    @Override
+    public Long save(CustomerEntity customerEntity) {
+        return this.insert(customerEntity);
+    }
+
 
     private String buildSqlSpecial(CustomerSearchBuilder builder) {
         StringBuilder sqlSpecial = new StringBuilder("");

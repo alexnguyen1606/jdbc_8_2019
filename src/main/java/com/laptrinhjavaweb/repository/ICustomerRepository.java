@@ -11,4 +11,5 @@ public interface ICustomerRepository extends JpaRepository<CustomerEntity> {
 
 
     List<CustomerEntity> findAll(Map<String, Object> params, Pageable pageable, CustomerSearchBuilder builder);
+    Long save(CustomerEntity customerEntity);
 }

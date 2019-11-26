@@ -113,7 +113,6 @@ public class BuildingService implements IBuildingService{
 	@Override
 	public Map<String, String> getBuildingTypes() {
 		Map<String,String> buildingTypes = new HashMap<>();
-		StringBuilder type = new StringBuilder("");
 		for(BuildingTypesEnum item : BuildingTypesEnum.values()){
 			buildingTypes.put(item.toString(),item.getValue());
 		}
@@ -131,9 +130,9 @@ public class BuildingService implements IBuildingService{
 
 	@Override
 	public void setType(BuildingDTO buildingDTO) {
-		StringBuilder type = new StringBuilder("");
-		type.append(String.join(",",buildingDTO.getBuildingTypes()));
-		buildingDTO.setType(type.toString());
+			StringBuilder type = new StringBuilder("");
+			type.append(String.join(",",buildingDTO.getBuildingTypes()));
+			buildingDTO.setType(type.toString());
 	}
 
 	private Map<String,Object> convertToMapProperties(BuildingSearchBuilder fieldSearch) {

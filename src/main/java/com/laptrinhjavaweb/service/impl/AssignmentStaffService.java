@@ -28,6 +28,8 @@ public class AssignmentStaffService implements IAssignmentStaffService {
     public AssignmentStaffDTO save(AssignmentStaffDTO assignmentStaffDTO) {
         if (assignmentStaffDTO.getId()==null){
             AssignmentStaffEntity entity = converter.convertToEntity(assignmentStaffDTO);
+            entity.setCreatedDate(new Date());
+            entity.setModifiedDate(new Date());
             Long id = assignmentStaffRepository.insert(entity);
             return findOne(id);
         }
@@ -98,7 +100,7 @@ public class AssignmentStaffService implements IAssignmentStaffService {
         return assignmentStaffRepository.findAll().stream()
                 .map(item-> converter.convertToDTO(item)).collect(Collectors.toList());
     }
-
+    @Override
     public void assignBuilding(Long buildingId, Long[] staffs){
         ArrayList<Long> staffsAssignInDB = new ArrayList<>();
         findByBuildingId(buildingId).stream().

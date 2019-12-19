@@ -29,7 +29,6 @@ public class AssignmentStaffApi extends HttpServlet {
         AssignmentStaffDTO assignmentStaffDTO =  HttpUtil.of(request.getReader()).toModel(AssignmentStaffDTO.class);
 
         IAssignmentStaffService assignmentStaffService = new AssignmentStaffService();
-        ((AssignmentStaffService) assignmentStaffService).
-                assignBuilding(assignmentStaffDTO.getBuildingId(),assignmentStaffDTO.getStaffs());
+        assignmentStaffService.assignBuilding(assignmentStaffDTO.getBuildingId(),assignmentStaffDTO.getStaffs());
     }
 }

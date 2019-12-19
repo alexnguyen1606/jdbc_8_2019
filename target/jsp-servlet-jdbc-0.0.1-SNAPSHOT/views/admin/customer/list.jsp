@@ -94,7 +94,7 @@
                 </div>
             </div>
             <div class="col-sm-12">
-                <table class="table table-striped table-hover" id="buildingList">
+                <table class="table table-striped table-hover" id="customerList">
                     <thead>
                     <th></th>
                     <th>Tên khách hàng</th>

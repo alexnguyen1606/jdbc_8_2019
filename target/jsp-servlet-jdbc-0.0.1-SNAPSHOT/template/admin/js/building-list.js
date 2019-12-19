@@ -39,6 +39,7 @@ function assignStaff(data){
 
 $('#btnDeleteBuilding').click(function (e) {
     e.preventDefault();
+
     if (confirm("Bạn có muỗn xóa sản phẩm không")){
         var data  = {};
         var buildingIds = $('#buildingList').find('tbody input[type=checkbox]:checked').map(function(){

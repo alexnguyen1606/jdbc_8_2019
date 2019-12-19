@@ -17,4 +17,5 @@ public interface IAssignmentStaffService {
     void deleteByBuildingIdAndStaffId(Long buildingId,Long staffId);
     void deleteByBuildingId(Long buildingId);
     List<AssignmentStaffDTO> findAll();
+    void assignBuilding(Long buildingId, Long[] staffs);
 }

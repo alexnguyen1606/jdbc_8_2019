@@ -119,9 +119,9 @@
                                 </div>
 
                                 <div class="col-sm-12">
-                                    <c:forEach items="${buildingTypes}" var="item">
-                                        <label class="checkbox-inline"><input type="checkbox" id="buildingTypes" name="buildingTypes" ${fn:contains(model.type,item.key) ? "checked" :""}  value="${item.key}">${item.value}</label>
-                                    </c:forEach>
+                                        <c:forEach items="${buildingTypes}" var="item">
+                                            <label class="checkbox-inline"><input type="checkbox" id="buildingTypes" name="buildingTypes" ${fn:contains(model.type,item.key) ? "checked" :""}  value="${item.key}">${item.value}</label>
+                                        </c:forEach>
                                 </div>
                             </div>
                             <br>

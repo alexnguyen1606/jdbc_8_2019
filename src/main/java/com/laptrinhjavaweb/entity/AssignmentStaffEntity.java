@@ -7,20 +7,13 @@ import com.laptrinhjavaweb.annotation.Table;
 @Entity
 @Table(name = "assignmentstaff")
 public class AssignmentStaffEntity extends BaseEntity {
-    @Column(name = "id")
-    private Long id;
+
     @Column(name = "buildingid")
     private Long buildingId;
     @Column(name = "staffid")
     private Long staffId;
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public Long getBuildingId() {
         return buildingId;

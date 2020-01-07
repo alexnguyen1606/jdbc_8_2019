@@ -17,11 +17,13 @@ import java.util.Locale;
 
 public class BuildingConverter {
     private IRentAreaService areaService;
+    private ModelMapper modelMapper;
     public BuildingConverter(){
+        modelMapper = new ModelMapper();
         areaService = new RentAreaService();
     }
     public BuildingDTO covertToDTO(BuildingEntity buildingEntity){
-        ModelMapper modelMapper = new ModelMapper();
+
         BuildingDTO dto= modelMapper.map(buildingEntity,BuildingDTO.class);
         dto.setBuildingTypes(convertToBuildingTypes(buildingEntity.getType()));
         dto.setAreaRent(areaService.getAllAreaRentByBuildingId(dto.getId()));
@@ -30,7 +32,7 @@ public class BuildingConverter {
         return dto;
     }
     public BuildingEntity covertToEntity(BuildingDTO buildingDTO){
-        ModelMapper modelMapper = new ModelMapper();
+
         BuildingEntity entity= modelMapper.map(buildingDTO,BuildingEntity.class);
         entity.setType(convertToTypes(buildingDTO.getBuildingTypes()));
         return entity;

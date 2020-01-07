@@ -122,6 +122,27 @@ public class AssignmentStaffService implements IAssignmentStaffService {
             }
         }
     }
+
+    @Override
+    public boolean existAssignment(Long buildingId, Long staffId) {
+        if (findByBuildingIdAndStaffId(buildingId,staffId).getId() != null ){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    @Override
+    public AssignmentStaffDTO findByBuildingIdAndStaffId(Long buildingId, Long staffId) {
+        AssigmentStaffBuilder builder = new AssigmentStaffBuilder.Builder()
+                .setBuildingId(buildingId)
+                .setStaffId(staffId)
+                .build();
+        Map<String,Object> properties = convertToMapProperties(builder);
+        return converter.convertToDTO(assignmentStaffRepository.findByBuildingIdAndStaffId(properties));
+    }
+
     private Map<String,Object> convertToMapProperties(AssigmentStaffBuilder assigmentStaffBuilder){
         Map<String,Object> properties = new HashMap<>();
         try {

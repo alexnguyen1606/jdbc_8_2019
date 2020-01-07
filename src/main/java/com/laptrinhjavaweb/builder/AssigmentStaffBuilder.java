@@ -21,6 +21,7 @@ public class AssigmentStaffBuilder {
        private Long buildingId;
        private Long staffId;
         public AssigmentStaffBuilder build(){
+
             return new AssigmentStaffBuilder(this);
         }
         public Builder setBuildingId(Long buildingId) {

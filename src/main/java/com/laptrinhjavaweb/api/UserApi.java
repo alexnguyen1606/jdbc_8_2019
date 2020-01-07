@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.laptrinhjavaweb.utils.FormUtil;
@@ -39,8 +40,14 @@ public class UserApi extends HttpServlet {
         IUserService userService = new UserService();
         if (buildingDTO.getType()!=null && buildingDTO.getType().equals("SHOW_STAFF")){
             List<UserDTO> users =
-                    userService.findByStatusAndRoleIdAndBuildingId(SystemContant.USER_ENABLE,SystemContant.USER_ROLE,buildingDTO.getId());
+                    userService.findByStatusAndRoleIdAndBuildingId
+                            (SystemContant.USER_ENABLE,SystemContant.USER_ROLE,buildingDTO.getId());
             objectMapper.writeValue(response.getOutputStream(), users);
+        }
+        if(buildingDTO.getType()!=null && buildingDTO.getType().equals("SHOW_USER")){
+            List<UserDTO> users = userService.findByStatusAndRoleAndCustomerId
+                    (SystemContant.USER_ENABLE,SystemContant.USER_ROLE,buildingDTO.getId());
+            objectMapper.writeValue(response.getOutputStream(),users);
         }
 
     }

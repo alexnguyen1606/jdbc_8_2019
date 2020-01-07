@@ -18,4 +18,6 @@ public interface IAssignmentStaffService {
     void deleteByBuildingId(Long buildingId);
     List<AssignmentStaffDTO> findAll();
     void assignBuilding(Long buildingId, Long[] staffs);
+    boolean existAssignment(Long buildingId,Long staffId);
+    AssignmentStaffDTO findByBuildingIdAndStaffId(Long buildingId,Long staffId);
 }

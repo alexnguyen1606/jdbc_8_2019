@@ -16,7 +16,7 @@ public class CustomerRepository extends SimpleJpaRepository<CustomerEntity> impl
         StringBuilder sql = new StringBuilder(" Select * from customer AS A");
         String sqlSpecial =buildSqlSpecial(builder);
         if (StringUtils.isNotBlank(builder.getUserId())){
-            sql.append(" INNER JOIN customerservice as B ON A.id = B.customerid");
+            sql.append(" INNER JOIN assignmentcustomer as B ON A.id = B.customerid");
         }
         sql.append(" WHERE 1=1");
         sql = this.createSqlFindAll(sql,properties);

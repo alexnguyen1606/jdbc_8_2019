@@ -93,7 +93,7 @@ public class BuildingService implements IBuildingService{
 		buildingEntity.setCreatedBy(buildingEntityInDB.getCreatedBy());
 		buildingEntity.setModifiedDate(new Date());
 		buildingEntity.setModifiedBy("abc");
-		rentAreaService.updateAll(buildingDTO.getId(),buildingDTO.getAreaRent());
+		rentAreaService.saveAll(buildingDTO.getId(),buildingDTO.getAreaRent());
 		buildingRepository.update(buildingEntity);
 		return findById(buildingDTO.getId());
 		}

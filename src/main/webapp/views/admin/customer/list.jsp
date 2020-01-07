@@ -114,11 +114,11 @@
                             <td>${item.phoneNumber}</td>
                             <td>${item.companyName}</td>
                             <td>
-                                <button class="btn btn-primary" onclick="" data-toggle="tooltip"
+                                <button class="btn btn-primary" onclick="AssignmentCustomer(${item.id})" data-toggle="tooltip"
                                         title="Giao tòa nhà ">
                                     <i class="fa fa-bars"></i></button>
                                 <a href="${customerURL}?action=EDIT&id=${item.id}" class="btn btn-success"  data-toggle="tooltip"
-                                   title="Chỉnh sửa khách hàng ">
+                                   title="Cập nhật tiến trình">
                                     <i class="fa fa-pencil"></i>
                                 </a>
                             </td>
@@ -131,5 +131,36 @@
     </div>
 </div> <!-- end row -->
 </div> <!--  end page content-->
+<div class="modal fade" id="myModalCustomer" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Danh sách nhân viên</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table table-hover" id="staffList">
+                    <thead>
+                    <tr>
+                        <th>Check</th>
+                        <th>Tên nhân viên</th>
+                    </tr>
+                    </thead>
+                </table>
+                <input type="hidden" id="customerId" name="customerId" value="">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="btnAssignCustomer">Giao Khách Hàng</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+
+
+</script>
 </body>
 </html>

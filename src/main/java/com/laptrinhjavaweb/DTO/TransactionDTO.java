@@ -1,12 +1,17 @@
 package com.laptrinhjavaweb.DTO;
 
-public class CustomerServiceDTO extends BaseDTO{
-
+public class TransactionDTO extends BaseDTO {
+    private Long staffId;
     private Long customerId;
-
-    private Long userId;
-
     private String note;
+
+    public Long getStaffId() {
+        return staffId;
+    }
+
+    public void setStaffId(Long staffId) {
+        this.staffId = staffId;
+    }
 
     public Long getCustomerId() {
         return customerId;
@@ -14,14 +19,6 @@ public class CustomerServiceDTO extends BaseDTO{
 
     public void setCustomerId(Long customerId) {
         this.customerId = customerId;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
     }
 
     public String getNote() {

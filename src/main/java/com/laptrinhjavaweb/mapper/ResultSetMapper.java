@@ -58,6 +58,7 @@ public class ResultSetMapper <T>{
                         BeanUtils.setProperty(object,field.getName(),columnModel.columnValue);
                     } catch (IllegalAccessException|InvocationTargetException e) {
                         e.printStackTrace();
+                        System.out.println(e.getMessage());
                     }
                     //stop when meet true target
                     break;

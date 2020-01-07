@@ -27,6 +27,7 @@
     <!-- ace settings handler -->
     <script src="<c:url value='/template/admin/assets/js/ace-extra.min.js' />"></script>
 
+
 </head>
 
 <body class="no-skin">
@@ -46,7 +47,6 @@
 
 <%--<%@ include file="/common/admin/footer.jsp"%>--%>
 </div> <!-- main container -->
-
 <script src="<c:url value='/template/admin/assets/js/jquery.2.1.1.min.js' />"></script>
 <script src="<c:url value='/template/admin/assets/js/ace-extra.min.js'/>"></script>
 <script src="<c:url value='/template/admin/assets/js/jquery-ui.custom.min.js' />"></script>

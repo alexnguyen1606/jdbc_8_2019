@@ -8,10 +8,10 @@ public interface IRentAreaService {
     RentAreaDTO save(RentAreaDTO rentAreaDTO);
     RentAreaDTO findOne(Long id);
     void deleteByBuildingId(Long buildingId);
-    void deleteOne(Long id);
+  //  void deleteOne(Long id);
     List<RentAreaDTO> findByBuildingId(Long buildingId);
     String getAllAreaRentByBuildingId(Long buildingId);
     void saveAll(Long buildingId,String areaRent);
-    void updateAll(Long buildingId,String areaRent);
-    RentAreaDTO findByBuildingIdAndValue(Long buildingId,Integer value);
+  //  void updateAll(Long buildingId,String areaRent);
+   // RentAreaDTO findByBuildingIdAndValue(Long buildingId,Integer value);
 }

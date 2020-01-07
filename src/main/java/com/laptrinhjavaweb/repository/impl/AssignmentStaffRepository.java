@@ -10,19 +10,18 @@ import java.util.Map;
 public class AssignmentStaffRepository extends SimpleJpaRepository<AssignmentStaffEntity>
         implements IAssignmentStaffRepository {
 
-
-
-
     @Override
-    public AssignmentStaffEntity findByStaffIdAndBuildingId(Map<String,Object> properties) {
+    public AssignmentStaffEntity findByBuildingIdAndStaffId(Map<String,Object> properties) {
         List<AssignmentStaffEntity> assignmentStaff = this.finAll(properties);
-        return assignmentStaff.size()>0 ? assignmentStaff.get(0) : null;
+        return assignmentStaff.size()>0 ? assignmentStaff.get(0) : new AssignmentStaffEntity();
     }
 
     @Override
     public List<AssignmentStaffEntity> findByBuildingId(Map<String, Object> properties) {
         return this.finAll(properties);
     }
+
+
 
     @Override
     public void deleteByBuildingIdAndStaffId(Map<String, Object> properties) {

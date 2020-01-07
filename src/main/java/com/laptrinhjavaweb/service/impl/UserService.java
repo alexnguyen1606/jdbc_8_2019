@@ -10,15 +10,21 @@ import com.laptrinhjavaweb.converter.UserConverter;
 import com.laptrinhjavaweb.entity.UserEntity;
 import com.laptrinhjavaweb.repository.IUserRepository;
 import com.laptrinhjavaweb.repository.impl.UserRepository;
+import com.laptrinhjavaweb.service.IAssignmentCustomerService;
+import com.laptrinhjavaweb.service.IAssignmentStaffService;
 import com.laptrinhjavaweb.service.IUserService;
 
 public class UserService implements IUserService{
 
 	private IUserRepository userRepository;
+	private IAssignmentStaffService assignmentStaffService;
+	private IAssignmentCustomerService assignmentCustomerService;
 	private UserConverter converter;
 	public UserService() {
 		converter = new UserConverter();
 		userRepository = new UserRepository();
+		assignmentStaffService = new AssignmentStaffService();
+		assignmentCustomerService = new AssignmentCustomerService();
 	}
 	@Override
 	public ArrayList<UserDTO> findAll() {
@@ -51,28 +57,49 @@ public class UserService implements IUserService{
 
 	@Override
 	public List<UserDTO> findByStatusAndRoleIdAndBuildingId(int status,long roleId,Long buildingId) {
-		List<UserDTO> a = userRepository.findAllByStatusAndRole(status,roleId)
-				.stream().map(item -> converter.convertToDTO(item))
-				.collect(Collectors.toList());
-		Map<Long, Object> listA = a.stream().collect(
-			Collectors.toMap(UserDTO::getId,item-> item )
-		);
-
-        List<UserDTO> listB = userRepository.findAllByAssigmentStaff(buildingId)
-				.stream().map(item -> converter.convertToDTO(item))
-				.collect(Collectors.toList());
-		List<UserDTO> result = new ArrayList<>();
-		for (Map.Entry item : listA.entrySet()){
-			UserDTO userListA = (UserDTO) item.getValue();
-			for (UserDTO userDTO : listB) {
-				if (item.getKey()==userDTO.getId()) {
-					userListA.setChecked("checked");
-				}
+		List<UserDTO> staffs = findByStatusAndRole(status,roleId);
+		for (UserDTO staff : staffs) {
+			if (assignmentStaffService.existAssignment(buildingId, staff.getId())) {
+				staff.setChecked("checked");
+			} else {
+				staff.setChecked("");
 			}
-			result.add(userListA);
 		}
-		return result;
+//		Map<Long, Object> listA = staffs.stream().collect(
+//				Collectors.toMap(UserDTO::getId, item -> item)
+//		);
+//
+//		List<UserDTO> listB = userRepository.findAllByAssigmentStaff(buildingId)
+//				.stream().map(item -> converter.convertToDTO(item))
+//				.collect(Collectors.toList());
+//		List<UserDTO> result = new ArrayList<>();
+//		for (Map.Entry item : listA.entrySet()) {
+//			UserDTO userListA = (UserDTO) item.getValue();
+//			for (UserDTO userDTO : listB) {
+//				if (item.getKey() == userDTO.getId()) {
+//					userListA.setChecked("checked");
+//				}
+//			}
+//			result.add(userListA);
+//		}
+//		return result;
+//	}
+		return staffs;
 	}
+
+	@Override
+	public List<UserDTO> findByStatusAndRoleAndCustomerId(int status, Long roleId, Long customerId) {
+		List<UserDTO> staffs = findByStatusAndRole(status,roleId);
+		for (UserDTO staff : staffs) {
+			if (assignmentCustomerService.existAssigment(customerId,staff.getId())) {
+				staff.setChecked("checked");
+			} else {
+				staff.setChecked("");
+			}
+		}
+		return staffs;
+	}
+
 
 	@Override
 	public List<UserDTO> findByStatus(int status) {

@@ -1,9 +1,5 @@
 package com.laptrinhjavaweb.controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.laptrinhjavaweb.DTO.BuildingDTO;
-import com.laptrinhjavaweb.utils.HttpUtil;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,6 +10,7 @@ import java.io.IOException;
 
 @WebServlet(urlPatterns = {"/admin-home"})
 public class HomeController extends HttpServlet{
+
     protected void doPost (HttpServletRequest request, HttpServletResponse response)throws SecurityException,IOException {
 
     }

@@ -1,13 +1,11 @@
 package com.laptrinhjavaweb.repository.impl;
 
-import com.laptrinhjavaweb.DTO.UserDTO;
 import com.laptrinhjavaweb.entity.UserEntity;
-import com.laptrinhjavaweb.paging.Pageable;
 import com.laptrinhjavaweb.repository.IUserRepository;
 
+import javax.annotation.ManagedBean;
 import java.util.List;
-import java.util.Map;
-
+@ManagedBean
 public class UserRepository extends SimpleJpaRepository<UserEntity> implements IUserRepository {
 
 

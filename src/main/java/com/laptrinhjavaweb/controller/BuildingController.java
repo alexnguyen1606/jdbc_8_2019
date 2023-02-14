@@ -13,6 +13,8 @@ import com.laptrinhjavaweb.service.impl.BuildingService;
 import com.laptrinhjavaweb.service.impl.UserService;
 import com.laptrinhjavaweb.utils.FormUtil;
 
+import javax.annotation.ManagedBean;
+import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -25,10 +27,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@ManagedBean
 @WebServlet(urlPatterns = {"/admin-building"})
 public class BuildingController extends HttpServlet {
-    private IBuildingService buildingService = new BuildingService();
-    private IUserService userService = new UserService();
+
+    @Inject
+    private IBuildingService buildingService;
+    @Inject
+    private IUserService userService;
+
     protected void doPost (HttpServletRequest request, HttpServletResponse response)throws SecurityException, IOException {
 
     }

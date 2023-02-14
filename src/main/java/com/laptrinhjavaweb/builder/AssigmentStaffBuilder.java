@@ -1,5 +1,9 @@
 package com.laptrinhjavaweb.builder;
 
+import java.time.format.DateTimeFormatter;
+import java.util.regex.Pattern;
+import java.util.zip.DataFormatException;
+
 public class AssigmentStaffBuilder {
     private Long buildingId;
     private Long staffId;
@@ -34,5 +38,27 @@ public class AssigmentStaffBuilder {
             return this;
         }
     }
+    
+    private void validateName(String name){
+        if (name==null){
+            throw new RuntimeException("Tên không được bỏ trống");
+        }
+        
+    }
+    
+    private static void validateDateOfBirth(String dateOfBirth){
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        try{
+            dateTimeFormatter.parse(dateOfBirth);
+        }catch (Exception e){
+            throw new RuntimeException("Ngày sinh k hợp lệ");
+        }
+    }
 
+  public static void main(String[] args) {
+    
+    
+    String a ="16-06-1997a";
+    validateDateOfBirth(a);
+  }
 }

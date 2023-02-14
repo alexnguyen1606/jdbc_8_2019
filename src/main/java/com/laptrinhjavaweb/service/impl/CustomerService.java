@@ -17,7 +17,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class CustomerService implements ICustomerService {
-    private CustomerConverter customerConverter ;
+    private CustomerConverter customerConverter;
     private CustomerRepository customerRepository;
 
     public CustomerService() {
@@ -27,35 +27,34 @@ public class CustomerService implements ICustomerService {
 
     @Override
     public List<CustomerDTO> findAll(Pageable pageable) {
-
         return customerRepository.findAll(pageable)
-                .stream().map(item-> customerConverter.convertToDTO(item)).collect(Collectors.toList());
+                .stream().map(item -> customerConverter.convertToDTO(item)).collect(Collectors.toList());
     }
 
     @Override
     public List<CustomerDTO> findAll() {
         return customerRepository.findAll()
-                .stream().map(item-> customerConverter.convertToDTO(item)).collect(Collectors.toList());
+                .stream().map(item -> customerConverter.convertToDTO(item)).collect(Collectors.toList());
     }
 
     @Override
     public List<CustomerDTO> findAll(CustomerSearchBuilder fieldSearch, Pageable pageable) {
-        Map<String,Object> properties = mapToProperties(fieldSearch);
-        return customerRepository.findAll(properties,pageable,fieldSearch)
-                .stream().map(item-> customerConverter.convertToDTO(item)).collect(Collectors.toList());
+        Map<String, Object> properties = mapToProperties(fieldSearch);
+        return customerRepository.findAll(properties, pageable, fieldSearch)
+                .stream().map(item -> customerConverter.convertToDTO(item)).collect(Collectors.toList());
     }
 
     @Override
     public CustomerDTO findById(Long id) {
-        if (id==null){
-            return  new CustomerDTO();
+        if (id == null) {
+            return new CustomerDTO();
         }
         return customerConverter.convertToDTO(customerRepository.findById(id));
     }
 
     @Override
     public CustomerDTO save(CustomerDTO customerDTO) {
-        if (customerDTO.getId()==null){
+        if (customerDTO.getId() == null) {
             CustomerEntity customerEntity = customerConverter.convertToEntity(customerDTO);
             customerEntity.setCreatedDate(new Date());
             customerEntity.setModifiedDate(new Date());
@@ -68,7 +67,7 @@ public class CustomerService implements ICustomerService {
 
     @Override
     public CustomerDTO update(CustomerDTO customerDTO) {
-        if (customerDTO==null){
+        if (customerDTO == null) {
             return new CustomerDTO();
         }
         CustomerDTO customerInDB = findById(customerDTO.getId());
@@ -84,23 +83,23 @@ public class CustomerService implements ICustomerService {
 
     @Override
     public void delete(Long[] ids) {
-        for (Long id : ids){
-            if (id!=null){
+        for (Long id : ids) {
+            if (id != null) {
                 customerRepository.deleteById(id);
             }
         }
     }
 
-    public Map<String,Object> mapToProperties(CustomerSearchBuilder fieldSearch){
-        Map<String,Object> properties = new HashMap<>();
+    public Map<String, Object> mapToProperties(CustomerSearchBuilder fieldSearch) {
+        Map<String, Object> properties = new HashMap<>();
         Field[] fields = CustomerSearchBuilder.class.getDeclaredFields();
         try {
-        for (Field field : fields){
-            if (!field.getName().equals("userId")){
-                field.setAccessible(true);
-                properties.put(field.getName().toLowerCase(),field.get(fieldSearch));
+            for (Field field : fields) {
+                if (!field.getName().equals("userId")) {
+                    field.setAccessible(true);
+                    properties.put(field.getName().toLowerCase(), field.get(fieldSearch));
+                }
             }
-        }
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }

@@ -7,17 +7,28 @@ import java.util.ResourceBundle;
 
 
 public class EntityManagerFactory {
-	static ResourceBundle resourceBundle = ResourceBundle.getBundle("db");
-	
-	public static Connection getConnection() {
-		try {
-			Class.forName(resourceBundle.getString("driverName"));
-			String url = resourceBundle.getString("url");
-			String user = resourceBundle.getString("username");
-			String password = resourceBundle.getString("password");
-			return DriverManager.getConnection(url, user, password);
-		} catch (ClassNotFoundException | SQLException e) {
-			return null;
-		}
-	}
+
+    private EntityManagerFactory() {
+    }
+
+    static ResourceBundle resourceBundle = ResourceBundle.getBundle("db");
+
+    private static Connection connection;
+
+    public static Connection getConnection() {
+        if (connection != null) {
+            return connection;
+        }
+
+        try {
+            Class.forName(resourceBundle.getString("driverName"));
+            String url = resourceBundle.getString("url");
+            String user = resourceBundle.getString("username");
+            String password = resourceBundle.getString("password");
+            connection = DriverManager.getConnection(url, user, password);
+            return connection;
+        } catch (ClassNotFoundException | SQLException e) {
+            return null;
+        }
+    }
 }

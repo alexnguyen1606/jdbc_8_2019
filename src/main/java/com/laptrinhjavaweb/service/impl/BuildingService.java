@@ -17,7 +17,9 @@ import com.laptrinhjavaweb.repository.impl.BuildingRepository;
 import com.laptrinhjavaweb.service.IBuildingService;
 import org.apache.commons.lang3.StringUtils;
 
+import javax.annotation.ManagedBean;
 
+@ManagedBean
 public class BuildingService implements IBuildingService{
 	private BuildingRepository buildingRepository;
 	private BuildingConverter buildingConverter;

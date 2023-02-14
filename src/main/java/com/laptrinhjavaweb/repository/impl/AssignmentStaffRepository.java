@@ -4,9 +4,10 @@ import com.laptrinhjavaweb.entity.AssignmentStaffEntity;
 import com.laptrinhjavaweb.paging.Pageable;
 import com.laptrinhjavaweb.repository.IAssignmentStaffRepository;
 
+import javax.annotation.ManagedBean;
 import java.util.List;
 import java.util.Map;
-
+@ManagedBean
 public class AssignmentStaffRepository extends SimpleJpaRepository<AssignmentStaffEntity>
         implements IAssignmentStaffRepository {
 

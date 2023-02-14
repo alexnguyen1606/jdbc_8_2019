@@ -10,17 +10,17 @@ import com.laptrinhjavaweb.repository.impl.RentAreaRepository;
 import com.laptrinhjavaweb.service.IRentAreaService;
 import org.apache.commons.lang3.StringUtils;
 
+import javax.annotation.ManagedBean;
+import javax.inject.Inject;
 import java.lang.reflect.Field;
 import java.util.*;
 import java.util.stream.Collectors;
-
+@ManagedBean
 public class RentAreaService implements IRentAreaService {
+    @Inject
     private IRentAreaRepository rentAreaRepository;
+    @Inject
     private RentAreaConverter converter;
-    public RentAreaService() {
-        rentAreaRepository = new RentAreaRepository();
-        converter = new RentAreaConverter();
-    }
 
     @Override
     public RentAreaDTO save(RentAreaDTO rentAreaDTO) {

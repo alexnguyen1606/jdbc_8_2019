@@ -28,7 +28,6 @@ public class SimpleJpaRepository<T> implements JpaRepository<T>{
 	@Override
 	public List<T> findAll(Map<String,Object> properties,Pageable pageable, Object... where) {
 		String tableName ="";
-
 		if (zClass.isAnnotationPresent(Table.class)&&zClass.isAnnotationPresent(Entity.class)){
 			Table tableClass = zClass.getAnnotation(Table.class);
 			tableName = tableClass.name();
@@ -36,7 +35,7 @@ public class SimpleJpaRepository<T> implements JpaRepository<T>{
 		StringBuilder sql = new StringBuilder("select * from "+tableName + " AS A");
 		sql.append(" WHERE  1=1 ");
 		sql = createSqlFindAll(sql,properties);
-		if (where.length==1 && where!=null){
+		if (where.length == 1){
             sql.append(where[0]);
             System.out.println(where[0]);
         }

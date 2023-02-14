@@ -11,17 +11,18 @@ import com.laptrinhjavaweb.repository.IAssignmentStaffRepository;
 import com.laptrinhjavaweb.repository.impl.AssignmentStaffRepository;
 import com.laptrinhjavaweb.service.IAssignmentStaffService;
 
+import javax.annotation.ManagedBean;
+import javax.inject.Inject;
 import java.lang.reflect.Field;
 import java.util.*;
 import java.util.stream.Collectors;
 
+@ManagedBean
 public class AssignmentStaffService implements IAssignmentStaffService {
+    @Inject
     private IAssignmentStaffRepository assignmentStaffRepository;
+    @Inject
     private AssignmentStaffConverter converter;
-    public AssignmentStaffService() {
-        assignmentStaffRepository = new AssignmentStaffRepository();
-        converter = new AssignmentStaffConverter();
-    }
 
 
     @Override

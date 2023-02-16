@@ -1,6 +1,6 @@
 package com.laptrinhjavaweb.converter;
 
-import com.laptrinhjavaweb.DTO.AssignmentCustomerDTO;
+import com.laptrinhjavaweb.dto.AssignmentCustomerDTO;
 import com.laptrinhjavaweb.entity.AssignmentCustomerEntity;
 import org.modelmapper.ModelMapper;
 

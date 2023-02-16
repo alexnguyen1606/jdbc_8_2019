@@ -1,6 +1,6 @@
 package com.laptrinhjavaweb.service;
 
-import com.laptrinhjavaweb.DTO.RentAreaDTO;
+import com.laptrinhjavaweb.dto.RentAreaDTO;
 
 import java.util.List;
 

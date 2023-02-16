@@ -1,6 +1,6 @@
 package com.laptrinhjavaweb.service.impl;
 
-import com.laptrinhjavaweb.DTO.TransactionDTO;
+import com.laptrinhjavaweb.dto.TransactionDTO;
 import com.laptrinhjavaweb.service.ITransactionService;
 
 import java.util.List;

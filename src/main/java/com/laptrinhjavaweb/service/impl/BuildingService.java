@@ -4,8 +4,7 @@ import java.lang.reflect.Field;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import com.laptrinhjavaweb.DTO.BuildingDTO;
-import com.laptrinhjavaweb.DTO.RentAreaDTO;
+import com.laptrinhjavaweb.dto.BuildingDTO;
 import com.laptrinhjavaweb.builder.BuildingSearchBuilder;
 import com.laptrinhjavaweb.converter.BuildingConverter;
 import com.laptrinhjavaweb.entity.BuildingEntity;

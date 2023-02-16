@@ -1,6 +1,6 @@
 package com.laptrinhjavaweb.controller;
 
-import com.laptrinhjavaweb.DTO.UserDTO;
+import com.laptrinhjavaweb.dto.UserDTO;
 import com.laptrinhjavaweb.service.IUserService;
 import com.laptrinhjavaweb.service.impl.UserService;
 

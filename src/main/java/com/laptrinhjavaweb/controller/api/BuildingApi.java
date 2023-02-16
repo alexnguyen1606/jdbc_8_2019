@@ -1,7 +1,7 @@
-package com.laptrinhjavaweb.api;
+package com.laptrinhjavaweb.controller.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.laptrinhjavaweb.DTO.BuildingDTO;
+import com.laptrinhjavaweb.dto.BuildingDTO;
 import com.laptrinhjavaweb.builder.BuildingSearchBuilder;
 import com.laptrinhjavaweb.paging.PageRequest;
 import com.laptrinhjavaweb.paging.Pageable;

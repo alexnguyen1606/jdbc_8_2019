@@ -4,7 +4,7 @@ import java.lang.reflect.Field;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import com.laptrinhjavaweb.DTO.UserDTO;
+import com.laptrinhjavaweb.dto.UserDTO;
 import com.laptrinhjavaweb.builder.UserBuilder;
 import com.laptrinhjavaweb.converter.UserConverter;
 import com.laptrinhjavaweb.entity.UserEntity;

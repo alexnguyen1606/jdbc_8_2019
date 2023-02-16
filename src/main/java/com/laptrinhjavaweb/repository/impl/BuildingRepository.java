@@ -1,13 +1,11 @@
 package com.laptrinhjavaweb.repository.impl;
 
-import com.laptrinhjavaweb.DTO.BuildingDTO;
 import com.laptrinhjavaweb.builder.BuildingSearchBuilder;
 import com.laptrinhjavaweb.entity.BuildingEntity;
 import com.laptrinhjavaweb.paging.Pageable;
 import com.laptrinhjavaweb.repository.IBuildingRepository;
 import org.apache.commons.lang3.StringUtils;
 
-import java.sql.*;
 import java.util.*;
 
 public class BuildingRepository extends SimpleJpaRepository<BuildingEntity> implements IBuildingRepository {

@@ -1,9 +1,6 @@
 package com.laptrinhjavaweb.service;
 
-import com.laptrinhjavaweb.DTO.AssignmentStaffDTO;
-import com.laptrinhjavaweb.DTO.BuildingDTO;
-import com.laptrinhjavaweb.DTO.RentAreaDTO;
-import com.laptrinhjavaweb.builder.AssigmentStaffBuilder;
+import com.laptrinhjavaweb.dto.AssignmentStaffDTO;
 
 import java.util.List;
 

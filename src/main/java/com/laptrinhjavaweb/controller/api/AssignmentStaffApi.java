@@ -1,15 +1,9 @@
-package com.laptrinhjavaweb.api;
+package com.laptrinhjavaweb.controller.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.laptrinhjavaweb.DTO.AssignmentStaffDTO;
-import com.laptrinhjavaweb.DTO.BuildingDTO;
-import com.laptrinhjavaweb.DTO.UserDTO;
-import com.laptrinhjavaweb.builder.AssigmentStaffBuilder;
+import com.laptrinhjavaweb.dto.AssignmentStaffDTO;
 import com.laptrinhjavaweb.service.IAssignmentStaffService;
-import com.laptrinhjavaweb.service.IUserService;
 import com.laptrinhjavaweb.service.impl.AssignmentStaffService;
-import com.laptrinhjavaweb.service.impl.UserService;
-import com.laptrinhjavaweb.utils.FormUtil;
 import com.laptrinhjavaweb.utils.HttpUtil;
 
 import javax.servlet.ServletException;

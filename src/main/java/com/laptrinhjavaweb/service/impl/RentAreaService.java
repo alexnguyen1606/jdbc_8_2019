@@ -1,14 +1,11 @@
 package com.laptrinhjavaweb.service.impl;
 
-import com.laptrinhjavaweb.DTO.RentAreaDTO;
-import com.laptrinhjavaweb.builder.AssigmentStaffBuilder;
+import com.laptrinhjavaweb.dto.RentAreaDTO;
 import com.laptrinhjavaweb.builder.RentAreaBuilder;
 import com.laptrinhjavaweb.converter.RentAreaConverter;
 import com.laptrinhjavaweb.entity.RentAreaEntity;
 import com.laptrinhjavaweb.repository.IRentAreaRepository;
-import com.laptrinhjavaweb.repository.impl.RentAreaRepository;
 import com.laptrinhjavaweb.service.IRentAreaService;
-import org.apache.commons.lang3.StringUtils;
 
 import javax.annotation.ManagedBean;
 import javax.inject.Inject;

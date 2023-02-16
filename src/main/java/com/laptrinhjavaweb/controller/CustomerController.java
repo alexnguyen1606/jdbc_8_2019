@@ -1,6 +1,6 @@
 package com.laptrinhjavaweb.controller;
 
-import com.laptrinhjavaweb.DTO.CustomerDTO;
+import com.laptrinhjavaweb.dto.CustomerDTO;
 import com.laptrinhjavaweb.builder.CustomerSearchBuilder;
 import com.laptrinhjavaweb.paging.PageRequest;
 import com.laptrinhjavaweb.paging.Pageable;

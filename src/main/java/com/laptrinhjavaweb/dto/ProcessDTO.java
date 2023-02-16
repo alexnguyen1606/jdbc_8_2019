@@ -1,6 +1,6 @@
-package com.laptrinhjavaweb.DTO;
+package com.laptrinhjavaweb.dto;
 
-public class TransactionDTO extends BaseDTO {
+public class ProcessDTO extends BaseDTO {
     private Long staffId;
     private Long customerId;
     private String note;

@@ -1,4 +1,4 @@
-package com.laptrinhjavaweb.api;
+package com.laptrinhjavaweb.controller.api;
 
 import javax.servlet.annotation.WebServlet;
 

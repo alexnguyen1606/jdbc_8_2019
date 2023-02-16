@@ -1,6 +1,6 @@
 package com.laptrinhjavaweb.converter;
 
-import com.laptrinhjavaweb.DTO.UserDTO;
+import com.laptrinhjavaweb.dto.UserDTO;
 import com.laptrinhjavaweb.entity.UserEntity;
 import org.modelmapper.ModelMapper;
 

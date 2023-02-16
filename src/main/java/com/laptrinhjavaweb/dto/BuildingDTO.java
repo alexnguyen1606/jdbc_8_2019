@@ -1,8 +1,5 @@
-package com.laptrinhjavaweb.DTO;
+package com.laptrinhjavaweb.dto;
 
-
-
-import java.util.Date;
 
 public class BuildingDTO extends BaseDTO{
 

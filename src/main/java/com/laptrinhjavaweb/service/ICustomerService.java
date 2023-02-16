@@ -1,7 +1,7 @@
 package com.laptrinhjavaweb.service;
 
 import com.laptrinhjavaweb.builder.CustomerSearchBuilder;
-import com.laptrinhjavaweb.DTO.CustomerDTO;
+import com.laptrinhjavaweb.dto.CustomerDTO;
 import com.laptrinhjavaweb.paging.Pageable;
 
 import java.util.List;

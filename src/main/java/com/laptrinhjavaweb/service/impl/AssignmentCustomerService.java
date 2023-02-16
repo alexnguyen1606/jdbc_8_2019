@@ -1,6 +1,6 @@
 package com.laptrinhjavaweb.service.impl;
 
-import com.laptrinhjavaweb.DTO.AssignmentCustomerDTO;
+import com.laptrinhjavaweb.dto.AssignmentCustomerDTO;
 import com.laptrinhjavaweb.builder.AssignmentCustomerBuilder;
 import com.laptrinhjavaweb.converter.AssignmentCustomerConverter;
 import com.laptrinhjavaweb.entity.AssignmentCustomerEntity;

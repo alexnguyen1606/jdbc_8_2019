@@ -1,19 +1,13 @@
 package com.laptrinhjavaweb.converter;
 
-import com.laptrinhjavaweb.DTO.BuildingDTO;
+import com.laptrinhjavaweb.dto.BuildingDTO;
 import com.laptrinhjavaweb.entity.BuildingEntity;
 import com.laptrinhjavaweb.enums.BuildingTypesEnum;
 import com.laptrinhjavaweb.enums.DistrictsEnum;
-import com.laptrinhjavaweb.service.IBuildingService;
 import com.laptrinhjavaweb.service.IRentAreaService;
-import com.laptrinhjavaweb.service.impl.BuildingService;
 import com.laptrinhjavaweb.service.impl.RentAreaService;
 import org.apache.commons.lang3.StringUtils;
 import org.modelmapper.ModelMapper;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
 
 public class BuildingConverter {
     private IRentAreaService areaService;

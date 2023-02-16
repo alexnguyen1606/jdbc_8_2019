@@ -1,6 +1,6 @@
 package com.laptrinhjavaweb.converter;
 
-import com.laptrinhjavaweb.DTO.AssignmentStaffDTO;
+import com.laptrinhjavaweb.dto.AssignmentStaffDTO;
 import com.laptrinhjavaweb.entity.AssignmentStaffEntity;
 import org.modelmapper.ModelMapper;
 

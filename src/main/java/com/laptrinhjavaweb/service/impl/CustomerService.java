@@ -2,10 +2,9 @@ package com.laptrinhjavaweb.service.impl;
 
 import com.laptrinhjavaweb.builder.CustomerSearchBuilder;
 import com.laptrinhjavaweb.converter.CustomerConverter;
-import com.laptrinhjavaweb.DTO.CustomerDTO;
+import com.laptrinhjavaweb.dto.CustomerDTO;
 import com.laptrinhjavaweb.entity.CustomerEntity;
 import com.laptrinhjavaweb.paging.Pageable;
-import com.laptrinhjavaweb.repository.ICustomerRepository;
 import com.laptrinhjavaweb.repository.impl.CustomerRepository;
 import com.laptrinhjavaweb.service.ICustomerService;
 

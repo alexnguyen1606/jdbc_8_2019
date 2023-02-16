@@ -1,16 +1,12 @@
 package com.laptrinhjavaweb.controller;
 
-import com.laptrinhjavaweb.DTO.BuildingDTO;
+import com.laptrinhjavaweb.dto.BuildingDTO;
 import com.laptrinhjavaweb.builder.BuildingSearchBuilder;
 import com.laptrinhjavaweb.contant.SystemContant;
-import com.laptrinhjavaweb.enums.BuildingTypesEnum;
-import com.laptrinhjavaweb.enums.DistrictsEnum;
 import com.laptrinhjavaweb.paging.PageRequest;
 import com.laptrinhjavaweb.paging.Pageable;
 import com.laptrinhjavaweb.service.IBuildingService;
 import com.laptrinhjavaweb.service.IUserService;
-import com.laptrinhjavaweb.service.impl.BuildingService;
-import com.laptrinhjavaweb.service.impl.UserService;
 import com.laptrinhjavaweb.utils.FormUtil;
 
 import javax.annotation.ManagedBean;
@@ -23,9 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @ManagedBean
 @WebServlet(urlPatterns = {"/admin-building"})

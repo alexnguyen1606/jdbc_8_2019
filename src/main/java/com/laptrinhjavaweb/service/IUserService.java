@@ -3,7 +3,7 @@ package com.laptrinhjavaweb.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.laptrinhjavaweb.DTO.*;
+import com.laptrinhjavaweb.dto.*;
 public interface IUserService {
 
 	public ArrayList<UserDTO> findAll();

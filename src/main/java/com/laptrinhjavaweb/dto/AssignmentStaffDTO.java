@@ -1,7 +1,4 @@
-package com.laptrinhjavaweb.DTO;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.laptrinhjavaweb.dto;
 
 public class AssignmentStaffDTO {
     private Long id;

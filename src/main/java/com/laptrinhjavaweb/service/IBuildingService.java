@@ -1,10 +1,9 @@
 package com.laptrinhjavaweb.service;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.laptrinhjavaweb.DTO.BuildingDTO;
+import com.laptrinhjavaweb.dto.BuildingDTO;
 import com.laptrinhjavaweb.builder.BuildingSearchBuilder;
 import com.laptrinhjavaweb.paging.Pageable;
 

@@ -1,6 +1,6 @@
 package com.laptrinhjavaweb.service;
 
-import com.laptrinhjavaweb.DTO.ProcessDTO;
+import com.laptrinhjavaweb.dto.ProcessDTO;
 
 import java.util.List;
 

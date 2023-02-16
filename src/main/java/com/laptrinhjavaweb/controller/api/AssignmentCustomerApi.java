@@ -1,7 +1,7 @@
-package com.laptrinhjavaweb.api;
+package com.laptrinhjavaweb.controller.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.laptrinhjavaweb.DTO.AssignmentCustomerDTO;
+import com.laptrinhjavaweb.dto.AssignmentCustomerDTO;
 import com.laptrinhjavaweb.service.IAssignmentCustomerService;
 import com.laptrinhjavaweb.service.impl.AssignmentCustomerService;
 import com.laptrinhjavaweb.utils.HttpUtil;

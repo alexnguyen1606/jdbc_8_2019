@@ -1,4 +1,4 @@
-package com.laptrinhjavaweb.DTO;
+package com.laptrinhjavaweb.dto;
 
 public class CustomerDTO extends BaseDTO {
 

@@ -1,6 +1,6 @@
 package com.laptrinhjavaweb.converter;
 
-import com.laptrinhjavaweb.DTO.RentAreaDTO;
+import com.laptrinhjavaweb.dto.RentAreaDTO;
 import com.laptrinhjavaweb.entity.RentAreaEntity;
 import org.modelmapper.ModelMapper;
 

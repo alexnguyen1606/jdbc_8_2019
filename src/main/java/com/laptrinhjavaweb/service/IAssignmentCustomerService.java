@@ -1,6 +1,6 @@
 package com.laptrinhjavaweb.service;
 
-import com.laptrinhjavaweb.DTO.AssignmentCustomerDTO;
+import com.laptrinhjavaweb.dto.AssignmentCustomerDTO;
 
 import java.util.List;
 

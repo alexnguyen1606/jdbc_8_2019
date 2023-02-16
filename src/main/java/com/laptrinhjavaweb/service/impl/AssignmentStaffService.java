@@ -1,14 +1,10 @@
 package com.laptrinhjavaweb.service.impl;
 
-import com.laptrinhjavaweb.DTO.AssignmentStaffDTO;
-import com.laptrinhjavaweb.DTO.BuildingDTO;
-import com.laptrinhjavaweb.DTO.RentAreaDTO;
-import com.laptrinhjavaweb.DTO.UserDTO;
+import com.laptrinhjavaweb.dto.AssignmentStaffDTO;
 import com.laptrinhjavaweb.builder.AssigmentStaffBuilder;
 import com.laptrinhjavaweb.converter.AssignmentStaffConverter;
 import com.laptrinhjavaweb.entity.AssignmentStaffEntity;
 import com.laptrinhjavaweb.repository.IAssignmentStaffRepository;
-import com.laptrinhjavaweb.repository.impl.AssignmentStaffRepository;
 import com.laptrinhjavaweb.service.IAssignmentStaffService;
 
 import javax.annotation.ManagedBean;

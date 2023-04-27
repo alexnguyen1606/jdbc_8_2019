@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+import java.util.Stack;
 
 
 public class EntityManagerFactory {
@@ -12,23 +13,48 @@ public class EntityManagerFactory {
     }
 
     static ResourceBundle resourceBundle = ResourceBundle.getBundle("db");
+    static Stack<Connection> pool = new Stack<>();
+    private static final Integer MAX_SIZE = 10;
+    private static volatile Integer usedConnection = 0;
+    private static final Object syncObject = new Object();
 
-    private static Connection connection;
-
-    public static Connection getConnection() {
-        if (connection != null) {
-            return connection;
+    public static synchronized Connection getConnection() {
+        if (!pool.empty()) {
+            usedConnection++;
+            return pool.pop();
+        }
+        if (!usedConnection.equals(MAX_SIZE)) {
+            usedConnection++;
+            return init();
         }
 
+        while (usedConnection.equals(MAX_SIZE) && pool.empty()) {
+            try {
+                syncObject.wait();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        usedConnection++;
+        return pool.pop();
+    }
+
+    private static Connection init() {
         try {
             Class.forName(resourceBundle.getString("driverName"));
             String url = resourceBundle.getString("url");
             String user = resourceBundle.getString("username");
             String password = resourceBundle.getString("password");
-            connection = DriverManager.getConnection(url, user, password);
-            return connection;
+            return DriverManager.getConnection(url, user, password);
         } catch (ClassNotFoundException | SQLException e) {
-            return null;
+            throw new RuntimeException("SQL exception");
         }
     }
+
+    public static synchronized void release(Connection connection) {
+        pool.push(connection);
+        usedConnection--;
+        syncObject.notifyAll();
+    }
+
 }

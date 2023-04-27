@@ -507,8 +507,8 @@
     <list>
       <item itemvalue="Application.AssigmentStaffBuilder" />
       <item itemvalue="Application.UserController" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.41" />
       <item itemvalue="Application.ServerDemo" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.41" />
     </list>
     <recent_temporary>
       <list>

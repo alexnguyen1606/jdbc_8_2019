@@ -1,10 +1,12 @@
 package com.laptrinhjavaweb.entity;
 
 import com.laptrinhjavaweb.annotation.Column;
+import com.laptrinhjavaweb.annotation.Id;
 
 import java.util.Date;
 
 public class BaseEntity {
+    @Id
     @Column(name = "id")
     private Long id;
     @Column(name = "createddate")

@@ -48,8 +48,7 @@ public class ResultSetMapper <T>{
         }
      return result;
     }
-    private void convertResultSetToEntity(Field[] fields,ColumnModel columnModel,Object... objects){
-        T object = (T) objects[0];
+    private void convertResultSetToEntity(Field[] fields,ColumnModel columnModel, T object){
         for (Field field : fields){
             if(field.isAnnotationPresent(Column.class)){
                 Column column = field.getAnnotation(Column.class);

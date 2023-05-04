@@ -8,7 +8,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 
-public class BuildingRepository extends SimpleJpaRepository<BuildingEntity> implements IBuildingRepository {
+public class BuildingRepository extends SimpleJpaRepository<Long, BuildingEntity> implements IBuildingRepository {
 
     public List<BuildingEntity> findAll(Map<String,Object> params, Pageable pageable,BuildingSearchBuilder fieldSearch){
     	String sqlSpecial = buildSqlSpecial(fieldSearch);
@@ -18,7 +18,7 @@ public class BuildingRepository extends SimpleJpaRepository<BuildingEntity> impl
 			sqlSearch.append(" INNER JOIN assignmentstaff AS am ON A.id = am.staffid");
 		}
 		sqlSearch.append(" WHERE 1=1");
-		sqlSearch=this.createSqlFindAll(sqlSearch,params);
+		sqlSearch=this.makeCondition(sqlSearch,params);
 		sqlSearch.append(sqlSpecial);
 		//System.out.println("sql Special:"+sqlSpecial);
 		System.out.println("Sql search:"+sqlSearch.toString()+" end");

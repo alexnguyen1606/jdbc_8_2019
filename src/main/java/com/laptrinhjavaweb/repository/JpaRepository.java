@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public interface JpaRepository<T> {
+public interface JpaRepository<ID, T> {
 	List<T> findAll(Map<String,Object> properties,Pageable pageable, Object... objects);
 	List<T> finAll(Map<String,Object> properties,Object... objects);
 	List<T> findAll(Pageable pageable);
@@ -17,6 +17,6 @@ public interface JpaRepository<T> {
 	T findById(Long id);
 	void deleteById(Long id,Object... objects);
 	void deleteSpecial(Map<String,Object> properties,Object... objects);
-	Long insert(Object t);
-	void update(Object t);
+	ID insert(T t);
+	T update(T t);
 }

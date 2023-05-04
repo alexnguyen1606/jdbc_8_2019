@@ -16,14 +16,16 @@ import com.laptrinhjavaweb.paging.Pageable;
 import com.laptrinhjavaweb.repository.JpaRepository;
 import org.apache.commons.lang3.StringUtils;
 
-public abstract class SimpleJpaRepository<T> implements JpaRepository<T> {
+public abstract class SimpleJpaRepository<ID, T> implements JpaRepository<ID, T> {
 
     private Class<T> zClass;
+    private Class<ID> idClass;
 
     public SimpleJpaRepository() {
         Type type = getClass().getGenericSuperclass();
         ParameterizedType parameterizedType = (ParameterizedType) type;
         zClass = (Class<T>) parameterizedType.getActualTypeArguments()[0];
+        idClass = (Class<ID>) parameterizedType.getActualTypeArguments()[0];
     }
 
     @Override
@@ -355,7 +357,7 @@ public abstract class SimpleJpaRepository<T> implements JpaRepository<T> {
     }
 
     @Override
-    public Long insert(Object t) {
+    public ID insert(T t) {
 
         String sql = createSqlInsert();
         Connection connection = null;
@@ -363,7 +365,6 @@ public abstract class SimpleJpaRepository<T> implements JpaRepository<T> {
         ResultSet resultSet = null;
 
         try {
-            Long id = null;
             connection = EntityManagerFactory.getConnection();
             connection.setAutoCommit(false);
             statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
@@ -379,8 +380,7 @@ public abstract class SimpleJpaRepository<T> implements JpaRepository<T> {
             int indexParent = fields.length + 1;
             while (parentClass != null) {
                 Field[] fieldsParent = parentClass.getDeclaredFields();
-                for (int i = 0; i < fieldsParent.length; i++) {
-                    Field field = fieldsParent[i];
+                for (Field field : fieldsParent) {
                     field.setAccessible(true);
                     statement.setObject(indexParent, field.get(t));
                     indexParent++;
@@ -389,9 +389,11 @@ public abstract class SimpleJpaRepository<T> implements JpaRepository<T> {
             }
             statement.executeUpdate();
             resultSet = statement.getGeneratedKeys();
+            ID id = null;
             if (resultSet.next()) {
-                id = resultSet.getLong(1);
+                id = resultSet.getObject(1, idClass);
             }
+
             connection.commit();
             return id;
         } catch (SQLException | IllegalAccessException e) {
@@ -418,7 +420,7 @@ public abstract class SimpleJpaRepository<T> implements JpaRepository<T> {
 
 
     @Override
-    public void update(Object t) {
+    public T update(T t) {
         String sql = createSqlUpdate();
         Connection connection = null;
         PreparedStatement statement = null;
@@ -462,6 +464,7 @@ public abstract class SimpleJpaRepository<T> implements JpaRepository<T> {
             statement.setObject(indexParent, objectId);
             statement.executeUpdate();
             connection.commit();
+            return t;
         } catch (SQLException | IllegalAccessException e) {
             try {
                 connection.rollback();
@@ -478,7 +481,7 @@ public abstract class SimpleJpaRepository<T> implements JpaRepository<T> {
             }
 
         }
-        //return null;
+        return null;
     }
 
     protected String createSqlUpdate() {

@@ -6,7 +6,7 @@ import com.laptrinhjavaweb.repository.IUserRepository;
 import javax.annotation.ManagedBean;
 import java.util.List;
 @ManagedBean
-public class UserRepository extends SimpleJpaRepository<UserEntity> implements IUserRepository {
+public class UserRepository extends SimpleJpaRepository<Long, UserEntity> implements IUserRepository {
 
 
     @Override

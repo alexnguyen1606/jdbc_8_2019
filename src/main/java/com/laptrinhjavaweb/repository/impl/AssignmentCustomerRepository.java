@@ -7,7 +7,7 @@ import com.laptrinhjavaweb.service.IAssignmentCustomerService;
 import java.util.List;
 import java.util.Map;
 
-public class AssignmentCustomerRepository extends SimpleJpaRepository<AssignmentCustomerEntity>
+public class AssignmentCustomerRepository extends SimpleJpaRepository<Long, AssignmentCustomerEntity>
         implements IAssignmentCustomerRepository  {
 
     @Override

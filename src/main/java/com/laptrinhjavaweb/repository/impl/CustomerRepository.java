@@ -9,7 +9,7 @@ import org.apache.commons.lang3.StringUtils;
 import java.util.List;
 import java.util.Map;
 
-public class CustomerRepository extends SimpleJpaRepository<CustomerEntity> implements ICustomerRepository {
+public class CustomerRepository extends SimpleJpaRepository<Long, CustomerEntity> implements ICustomerRepository {
 
     @Override
     public List<CustomerEntity> findAll(Map<String,Object> properties, Pageable pageable, CustomerSearchBuilder builder) {
@@ -19,7 +19,7 @@ public class CustomerRepository extends SimpleJpaRepository<CustomerEntity> impl
             sql.append(" INNER JOIN assignmentcustomer as B ON A.id = B.customerid");
         }
         sql.append(" WHERE 1=1");
-        sql = this.createSqlFindAll(sql,properties);
+        sql = this.makeCondition(sql,properties);
         sql.append(sqlSpecial);
         return this.findAll(sql.toString(),pageable);
     }

@@ -5,6 +5,6 @@ import com.laptrinhjavaweb.entity.AssignmentStaffEntity;
 
 import java.util.Map;
 
-public interface IAssignmentCustomerRepository extends JpaRepository<AssignmentCustomerEntity>{
+public interface IAssignmentCustomerRepository extends JpaRepository<Long, AssignmentCustomerEntity>{
     AssignmentCustomerEntity findByCustomerIdAndUserId(Map<String,Object> properties);
 }

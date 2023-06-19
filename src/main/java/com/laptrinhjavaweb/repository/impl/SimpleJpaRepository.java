@@ -25,7 +25,7 @@ public abstract class SimpleJpaRepository<ID, T> implements JpaRepository<ID, T>
         Type type = getClass().getGenericSuperclass();
         ParameterizedType parameterizedType = (ParameterizedType) type;
         zClass = (Class<T>) parameterizedType.getActualTypeArguments()[0];
-        idClass = (Class<ID>) parameterizedType.getActualTypeArguments()[0];
+        idClass = (Class<ID>) parameterizedType.getActualTypeArguments()[1];
     }
 
     @Override
